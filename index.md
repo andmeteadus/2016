@@ -67,7 +67,7 @@ Lisaks praktikumidele sisaldab õppeaine järgnevaid komponente:
   * Kodutöö võib sisaldada ka küsimusi iseseisvalt õpitu (näiteks videoloengu) kohta. 
 * **Projekt:** Lisaks tuleb läbi viia üks praktiline andmeanalüüs ning kirjutada populaarteaduslikus vormis artikkel saadud tulemustest. 
 Artikkel on illustreeritud asjakohaste joonistega ning on arusaadav ka mittestatistikule. 
-Projekti võib teha kas üksinda või paaristööna. Tulemusi on vaja esitleda suulisel kaitsmisel.
+Projekti võib teha kas üksinda või paaristööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [eelmise aasta projektidega](http://andmeteadus.github.io/2015/projektid/).
 
 Aine läbimiseks on vaja:
 
@@ -83,16 +83,15 @@ Aine läbimiseks on vaja:
 
 # Tunniplaan
 
-Õppeaine toimub 2014/2015. õppeaasta kevadsemestril. 
+Õppeaine toimub 2015/2016. õppeaasta kevadsemestril. 
 
-* **Praktikumid teisipäeviti kell 14.15** ruumis 203  
-(nädalatel 24 - 25, 27 - 33). 
-* Konsultatsioon esmaspäeviti kell 14.15 ruumis 512. 
+* **Praktikumid kolmapäeviti kell 12.15** ruumis 203
+(nädalatel 24 - 25, 27 - 32). 
 
 # Kontakt ja küsimused
 
-* Kaspar Märtens
-* Tanel Pärnamaa
+* Mark Gimbutas
+* Siim Viigand
 
-Meiega saab ühendust aadressil: andmeteadus [at] gmail.com
+Meiega saab ühendust aadressidel markgimbutas [at] gmail.com ja siim.viigand [at] gmail.com
 
