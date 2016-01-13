@@ -21,9 +21,9 @@ Järgnev skeem võtab lühidalt kokku õppeaine olemuse.
 
 # Õppeaine eesmärgid
 
-* Tutvustada üliõpilastele, milliseid huvitavaid probleeme saab statistika abil lahendada erinevates valdkondades (näiteks bioteadustes, majanduses, juuras) ja harjutada nende lahendamist.
+* Tutvustada üliõpilastele, milliseid huvitavaid probleeme saab statistika abil lahendada erinevates valdkondades (näiteks bioteadustes, majanduses, juuras), ning harjutada nende lahendamist.
 * Õppida visualiseerimismeetodeid andmetest ülevaate saamiseks, tulemuste tõlgendamiseks ja nende sisu edasi andmiseks.
-* Tutvustada tarkvara R võimalusi reprodutseeritava analüüsi läbiviimiseks ja tulemuste visualiseerimiseks.
+* Tutvustada tarkvara R võimalusi reprodutseeritava analüüsi läbiviimiseks ning tulemuste visualiseerimiseks.
 
 Miks on kursuses olulisel kohal andmeanalüüsi reprodutseeritavus ja visualiseerimine?
 
@@ -72,7 +72,7 @@ Projekti võib teha kas üksinda või paaristööna. Tulemusi on vaja esitleda s
 Aine läbimiseks on vaja:
 
 1. kodutööde eest saada vähemalt 75% punktidest (on vaja saada vähemalt 150 punkti 200st võimalikust), 
-2. koostada projekt ja seda esitleda. 
+2. koostada projekt ning seda esitleda. 
 
 Õppeaines (3 EAP) ette nähtud 78 tundi tööd jaguneb järgnevalt:
 
@@ -83,15 +83,16 @@ Aine läbimiseks on vaja:
 
 # Tunniplaan
 
-Õppeaine toimub 2015/2016. õppeaasta kevadsemestril. 
+Õppeaine toimub 2014/2015. õppeaasta kevadsemestril. 
 
-* **Praktikumid kolmapäeviti kell 12.15** ruumis 203  
-(nädalatel 24 - 25, 27 - 32).
+* **Praktikumid teisipäeviti kell 14.15** ruumis 203  
+(nädalatel 24 - 25, 27 - 33). 
+* Konsultatsioon esmaspäeviti kell 14.15 ruumis 512. 
 
 # Kontakt ja küsimused
 
-* Mark Gimbutas
-* Siim Viigand
+* Kaspar Märtens
+* Tanel Pärnamaa
 
-Kirjutage meile aadressidel markgimbutas [at] gmail.com ja siim.viigand [at] gmail.com
+Meiega saab ühendust aadressil: andmeteadus [at] gmail.com
 
