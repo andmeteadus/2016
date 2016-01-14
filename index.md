@@ -47,11 +47,7 @@ Miks on kursuses olulisel kohal andmeanalüüsi reprodutseeritavus ja visualisee
 
 # Sihtgrupp
 
-* Kursus on mõeldud statistikahuvilistele üliõpilastele, kes on tuttavad tarkvaraga R.
-
-<div class="message">
-  Kui sa ei ole võtnud <em>rangelt soovituslikku</em> eeldusainet "Rakendustarkvara: R", aga soovid seda ainet õppida, siis soovitame iseseisvalt R-i õppida ["Rakendustarkvara: R" õppematerjalide](./rakendustarkvara_R) abil.
-</div>
+Kursus on mõeldud statistikahuvilistele üliõpilastele, kes on tuttavad tarkvaraga R. Kui sa ei ole võtnud *rangelt soovituslikku* eeldusainet "Rakendustarkvara: R", aga soovid seda ainet õppida, siis soovitame iseseisvalt R-i õppida ["Rakendustarkvara: R" õppematerjalide](./rakendustarkvara_R) abil.
 
 # Õppetöö korraldus
 
