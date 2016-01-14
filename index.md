@@ -50,7 +50,7 @@ Miks on kursuses olulisel kohal andmeanalüüsi reprodutseeritavus ja visualisee
 * Kursus on mõeldud statistikahuvilistele üliõpilastele, kes on tuttavad tarkvaraga R.
 
 <div class="message">
-  Kui sa ei ole võtnud <em>rangelt soovituslikku</em> eeldusainet "Rakendustarkvara: R", aga soovid seda ainet õppida, siis kirjuta meile ja leiame sulle sobiliku õppematerjali iseseisvaks ettevalmistuseks.
+  Kui sa ei ole võtnud <em>rangelt soovituslikku</em> eeldusainet "Rakendustarkvara: R", aga soovid seda ainet õppida, siis soovitame iseseisvalt R-i õppida ["Rakendustarkvara: R" õppematerjalide](./rakendustarkvara_R) abil.
 </div>
 
 # Õppetöö korraldus
@@ -67,7 +67,7 @@ Lisaks praktikumidele sisaldab õppeaine järgnevaid komponente:
   * Kodutöö võib sisaldada ka küsimusi iseseisvalt õpitu (näiteks videoloengu) kohta. 
 * **Projekt:** Lisaks tuleb läbi viia üks praktiline andmeanalüüs ning kirjutada populaarteaduslikus vormis artikkel saadud tulemustest. 
 Artikkel on illustreeritud asjakohaste joonistega ning on arusaadav ka mittestatistikule. 
-Projekti võib teha kas üksinda või paaristööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [eelmise aasta projektidega](http://andmeteadus.github.io/2015/projektid/).
+Projekti võib teha kas üksinda või paaristööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [eelmise aasta projektidega](../2015/projektid/).
 
 Aine läbimiseks on vaja:
 
