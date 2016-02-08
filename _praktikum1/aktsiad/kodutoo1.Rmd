@@ -54,12 +54,12 @@ Kõigepealt leia kolm kõige suurema päevase tootlusega aktsiat ning väljasta nend
 
 Seejärel leia kolm kõige madalama päevase tootlusega aktsiat ning väljasta nende kohta samasugune info. 
 
-Näpunäide: Abiks on funktsioonid `arrange()`, `select()` ja `head()`.
+Näpunäide: Abiks on funktsioonid `arrange()`, `select()` ja `top_n()`.
 
 
 ### Ülesanne 2 (6 punkti) - Ülevaade sektorite lõikes
 
-> Mati soovib raportis näidata ülevaadet ka sektorite lõikes, sest kliente võib huvitadada, kas ehitussektori aktsiatega kaubeldi rohkem kui IT-sektori aktsiatega, või kas jälle aktuaalseks kujunenud Kreeka võlateemad mõjutasid ainult finantssektori aktsiate tootlust?
+> Mati soovib raportis näidata ülevaadet ka sektorite lõikes, sest kliente võib huvitadada, kas ehitussektori aktsiatega kaubeldi rohkem kui IT-sektori aktsiatega?
 
 Iga sektori kohta, kus on vähemalt 30 ettevõtet, väljasta järgnev info:
 
@@ -76,8 +76,8 @@ Juhised:
     * kogukäive, 
     * keskmine käive, 
     * ettevõtete arv.  
-  Näpunäide 1: Kasuta paketi dplyr funktsioone `group_by()` ja `summarise()`.  
-  Näpunäide 2: Summade ja keskmiste arvutamisel ära võta arvesse puuduvaid väärtusi (puuduvate väärtuse välja jätmiseks on `sum` ja `mean` funktsioonidel argument `na.rm`).
+  Näpunäide 1: Kasuta paketi *dplyr* funktsioone `group_by()` ja `summarise()`.  
+  Näpunäide 2: Summade ja keskmiste arvutamisel ära võta arvesse puuduvaid väärtusi (puuduvate väärtuse välja jätmiseks võib funktsioonide `sum` ja `mean` argumendi `na.rm` väärtuseks seada `FALSE`).
 * Näita ainult neid sektoreid, kus on vähemalt 30 ettevõtet.
 
 
@@ -95,7 +95,7 @@ Juhised:
 * Arvuta iga aktsia kohta atraktiivsuse skoor, mis on arvutatud järgnevalt `0.5 * kasumi-aktsiahinna suhe + 0.5 * dividendi määr` 
 * Ostusoovituseks leia kolm kõige suurema skooriga aktsiat.
 
-Kui eelnevaga oled hakkama saanud, siis proovi eelnev kood kirjutada funktsiooniks, mis võtab sisendiks suvalise andmestiku ning väljastab kolme kõige atraktiivsema ettevõtte aktsiate sümbolid **vektorina**. (Näpunäide: Kui meil on andmetabel `df`, siis sealt saab veeru `tunnus` vektorina välja võtta dollarimärgiga `df$tunnus`.)
+Kui eelnevaga oled hakkama saanud, siis proovi eelnev kood kirjutada funktsiooniks, mis võtab sisendiks suvalise andmestiku ning väljastab kolme kõige atraktiivsema ettevõtte aktsiate sümbolid **vektorina** (meenutus: `andmestik$tunnus`). Funktsioon võib välja näha näiteks nii:
 
 ```{r, eval=FALSE}
 kauplemisalgoritm = function(x){
@@ -129,7 +129,7 @@ kauplemisalgoritm_turvaline = function(x){
 }
 ```
 
-Kasutades funktsiooni kauplemisalgoritm_turvaline, väljasta 3 ostusoovitust. 
+Kasutades funktsiooni *kauplemisalgoritm_turvaline*, väljasta 3 ostusoovitust. 
 
 ### Ülesanne 5 (5 punkti) - raporti vormistamine
 

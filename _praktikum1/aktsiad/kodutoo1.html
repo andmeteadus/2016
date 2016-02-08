@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -83,12 +85,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>tootlus.</li>
 </ol>
 <p>Seejärel leia kolm kõige madalama päevase tootlusega aktsiat ning väljasta nende kohta samasugune info.</p>
-<p>Näpunäide: Abiks on funktsioonid <code>arrange()</code>, <code>select()</code> ja <code>head()</code>.</p>
+<p>Näpunäide: Abiks on funktsioonid <code>arrange()</code>, <code>select()</code> ja <code>top_n()</code>.</p>
 </div>
 <div id="ulesanne-2-6-punkti---ulevaade-sektorite-loikes" class="section level3">
 <h3>Ülesanne 2 (6 punkti) - Ülevaade sektorite lõikes</h3>
 <blockquote>
-<p>Mati soovib raportis näidata ülevaadet ka sektorite lõikes, sest kliente võib huvitadada, kas ehitussektori aktsiatega kaubeldi rohkem kui IT-sektori aktsiatega, või kas jälle aktuaalseks kujunenud Kreeka võlateemad mõjutasid ainult finantssektori aktsiate tootlust?</p>
+<p>Mati soovib raportis näidata ülevaadet ka sektorite lõikes, sest kliente võib huvitadada, kas ehitussektori aktsiatega kaubeldi rohkem kui IT-sektori aktsiatega?</p>
 </blockquote>
 <p>Iga sektori kohta, kus on vähemalt 30 ettevõtet, väljasta järgnev info:</p>
 <ol style="list-style-type: decimal">
@@ -105,7 +107,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>keskmine tootlus,</li>
 <li>kogukäive,</li>
 <li>keskmine käive,</li>
-<li>ettevõtete arv.<br /> Näpunäide 1: Kasuta paketi dplyr funktsioone <code>group_by()</code> ja <code>summarise()</code>.<br /> Näpunäide 2: Summade ja keskmiste arvutamisel ära võta arvesse puuduvaid väärtusi (puuduvate väärtuse välja jätmiseks on <code>sum</code> ja <code>mean</code> funktsioonidel argument <code>na.rm</code>).</li>
+<li>ettevõtete arv.<br /> Näpunäide 1: Kasuta paketi <em>dplyr</em> funktsioone <code>group_by()</code> ja <code>summarise()</code>.<br /> Näpunäide 2: Summade ja keskmiste arvutamisel ära võta arvesse puuduvaid väärtusi (puuduvate väärtuse välja jätmiseks võib funktsioonide <code>sum</code> ja <code>mean</code> argumendi <code>na.rm</code> väärtuseks seada <code>FALSE</code>).</li>
 </ul></li>
 <li>Näita ainult neid sektoreid, kus on vähemalt 30 ettevõtet.</li>
 </ul>
@@ -126,7 +128,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>Arvuta iga aktsia kohta atraktiivsuse skoor, mis on arvutatud järgnevalt <code>0.5 * kasumi-aktsiahinna suhe + 0.5 * dividendi määr</code></li>
 <li>Ostusoovituseks leia kolm kõige suurema skooriga aktsiat.</li>
 </ul>
-<p>Kui eelnevaga oled hakkama saanud, siis proovi eelnev kood kirjutada funktsiooniks, mis võtab sisendiks suvalise andmestiku ning väljastab kolme kõige atraktiivsema ettevõtte aktsiate sümbolid <strong>vektorina</strong>. (Näpunäide: Kui meil on andmetabel <code>df</code>, siis sealt saab veeru <code>tunnus</code> vektorina välja võtta dollarimärgiga <code>df$tunnus</code>.)</p>
+<p>Kui eelnevaga oled hakkama saanud, siis proovi eelnev kood kirjutada funktsiooniks, mis võtab sisendiks suvalise andmestiku ning väljastab kolme kõige atraktiivsema ettevõtte aktsiate sümbolid <strong>vektorina</strong> (meenutus: <code>andmestik$tunnus</code>). Funktsioon võib välja näha näiteks nii:</p>
 <pre class="r"><code>kauplemisalgoritm = function(x){
   # tekitame andmestikule x juurde tunnuse kasumi-aktsiahinna suhe ja dividendi määr
   # [sinu kood]
@@ -152,7 +154,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <pre class="r"><code>kauplemisalgoritm_turvaline = function(x){
   # sinu kood
 }</code></pre>
-<p>Kasutades funktsiooni kauplemisalgoritm_turvaline, väljasta 3 ostusoovitust.</p>
+<p>Kasutades funktsiooni <em>kauplemisalgoritm_turvaline</em>, väljasta 3 ostusoovitust.</p>
 </div>
 <div id="ulesanne-5-5-punkti---raporti-vormistamine" class="section level3">
 <h3>Ülesanne 5 (5 punkti) - raporti vormistamine</h3>
@@ -167,7 +169,6 @@ library(knitr)
 opts_chunk$set(echo=FALSE, message=FALSE)
 ```
 </code></pre>
-
 </div>
 <div id="naidisraport" class="section level3">
 <h3>Näidisraport</h3>

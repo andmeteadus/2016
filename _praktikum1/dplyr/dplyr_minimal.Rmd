@@ -7,7 +7,7 @@ output:
 
 Andmetabelist info kättesaamiseks kasutame R-i paketti *dplyr*. See pakett muudab mugavaks ja kiireks sageli ettetulevad operatsioonid nagu andmestiku filtreerimise, sorteerimise ja grupeerimise. Paketi süntaks omab mitmeidki ühisjooni SQL süntaksi või suuremahuliste andmete töötlemise keelega Pig Latin.
 
-Esmakordsel kasutamisel tuleb pakett installeerida 
+Esmakordsel kasutamisel tuleb pakett installeerida. 
 
 ```{r, eval=FALSE}
 install.packages("dplyr")
@@ -28,7 +28,7 @@ Paketi *dplyr* peamised käsud on:
 * `mutate()`: lisa uusi veerge
 * `summarise()`: agregeeri mitu väärtust üheks tunnuseks
 * `group_by()`: muuda andmestik grupeeritud andmestikuks, et seejärel rakendada funktsioone igale grupile eraldi
-* `top_n()`: tipmised tunnused
+* `top_n()`: vali n esimest/viimast vaatlust
 
 Nende funktsioonide esimeseks argumendiks on alati *data.frame* ning alati tagastatakse *data.frame*.
 
@@ -160,6 +160,15 @@ top_n(andmed, 1, pikkus)
 top_n(andmed, 2, pikkus)
 ```
 
+Enne vaatluste järjestamist saab tunnusele rakendada ka mingit funktsiooni.
+
+```{r}
+# bottom 2 pikkuse järgi
+top_n(andmed, 2, -pikkus)
+# inimene, kelle pikkus on kõige lähemal 160-le
+top_n(andmed, 1, -abs(pikkus-160) )
+```
+
 ### Mitme funktsiooni järjest rakendamine
 
 Näide: Sorteerime pikkuse järgi ning valime välja ainult read, kus sugu == "M"
@@ -212,7 +221,19 @@ andmed %>%
   summarise(keskmine_pikkus = mean(pikkus))
 ```
 
+*Lisamärkus 1.* Kui töötlemise tulemust on vaja salvestada eraldi R muutujana, võib tunduda ilus kasutada selleks operaatorit `->`.
 
+```{r, eval=FALSE}
+andmed %>%
+  group_by(sugu) %>%
+  summarise(keskmine_pikkus = mean(pikkus)) -> uued_andmed
+```
+
+*Lisamärkus 2.* Võib-olla on mõistlik mainida, et operaatorit `%>%` saab kasutada ka teiste funktsioonide (mitte ainult *dplyr* enda funktsioonide) jaoks.
+
+```{r}
+c(1,3) %>% mean() %>% log(base=2)
+```
 
 ### Täiendav abimaterjal
 

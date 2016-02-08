@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -41,7 +43,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 <p>Andmetabelist info kättesaamiseks kasutame R-i paketti <em>dplyr</em>. See pakett muudab mugavaks ja kiireks sageli ettetulevad operatsioonid nagu andmestiku filtreerimise, sorteerimise ja grupeerimise. Paketi süntaks omab mitmeidki ühisjooni SQL süntaksi või suuremahuliste andmete töötlemise keelega Pig Latin.</p>
-<p>Esmakordsel kasutamisel tuleb pakett installeerida</p>
+<p>Esmakordsel kasutamisel tuleb pakett installeerida.</p>
 <pre class="r"><code>install.packages(&quot;dplyr&quot;)</code></pre>
 <p>Kui pakett on installeeritud, tuleb kasutamiseks see laadida käsuga</p>
 <pre class="r"><code>library(dplyr)</code></pre>
@@ -53,10 +55,11 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li><code>mutate()</code>: lisa uusi veerge</li>
 <li><code>summarise()</code>: agregeeri mitu väärtust üheks tunnuseks</li>
 <li><code>group_by()</code>: muuda andmestik grupeeritud andmestikuks, et seejärel rakendada funktsioone igale grupile eraldi</li>
-<li><code>top_n()</code>: tipmised tunnused</li>
+<li><code>top_n()</code>: vali n esimest/viimast vaatlust</li>
 </ul>
 <p>Nende funktsioonide esimeseks argumendiks on alati <em>data.frame</em> ning alati tagastatakse <em>data.frame</em>.</p>
 <p>Järgnevalt on toodud minimalistlikud näited, mis iseloomustavad paketi <em>dplyr</em> funktsionaalsust.</p>
+<pre><code>## Warning: package 'dplyr' was built under R version 3.2.3</code></pre>
 <pre class="r"><code>andmed = data.frame(sugu = c(&quot;M&quot;, &quot;M&quot;, &quot;N&quot;),
                   vanus = c(20, 60, 30),
                   pikkus = c(180, 200, 150))
@@ -158,18 +161,20 @@ mutate(andmed, pikkus2 = pikkus/100,
 summarise(andmed_grupeeritult, keskmine_pikkus = mean(pikkus))</code></pre>
 <pre><code>## Source: local data frame [2 x 2]
 ## 
-##   sugu keskmine_pikkus
-## 1    M             190
-## 2    N             150</code></pre>
+##     sugu keskmine_pikkus
+##   (fctr)           (dbl)
+## 1      M             190
+## 2      N             150</code></pre>
 <pre class="r"><code># Lisaks keskmisele pikkusele võime ka iga grupi kohta loendada vaatluste arvu
 summarise(andmed_grupeeritult, 
           keskmine_pikkus = mean(pikkus), 
           inimeste_arv = n())</code></pre>
 <pre><code>## Source: local data frame [2 x 3]
 ## 
-##   sugu keskmine_pikkus inimeste_arv
-## 1    M             190            2
-## 2    N             150            1</code></pre>
+##     sugu keskmine_pikkus inimeste_arv
+##   (fctr)           (dbl)        (int)
+## 1      M             190            2
+## 2      N             150            1</code></pre>
 <p>Sageli muudavad analüüsi kiireks ja mugavaks funktsioonid:</p>
 <ul>
 <li><code>distinct()</code> - eralda unikaalsed väärtused</li>
@@ -188,8 +193,6 @@ summarise(andmed_grupeeritult,
   
   ![alt text](joonis_top.png "Näide")
 -->
-
-
 <pre class="r"><code># top 1 pikkuse järgi
 top_n(andmed, 1, pikkus)</code></pre>
 <pre><code>##   sugu vanus pikkus
@@ -199,6 +202,16 @@ top_n(andmed, 2, pikkus)</code></pre>
 <pre><code>##   sugu vanus pikkus
 ## 1    M    20    180
 ## 2    M    60    200</code></pre>
+<p>Enne vaatluste järjestamist saab tunnusele rakendada ka mingit funktsiooni.</p>
+<pre class="r"><code># bottom 2 pikkuse järgi
+top_n(andmed, 2, -pikkus)</code></pre>
+<pre><code>##   sugu vanus pikkus
+## 1    M    20    180
+## 2    N    30    150</code></pre>
+<pre class="r"><code># inimene, kelle pikkus on kõige lähemal 160-le
+top_n(andmed, 1, -abs(pikkus-160) )</code></pre>
+<pre><code>##   sugu vanus pikkus
+## 1    N    30    150</code></pre>
 </div>
 <div id="mitme-funktsiooni-jarjest-rakendamine" class="section level3">
 <h3>Mitme funktsiooni järjest rakendamine</h3>
@@ -240,6 +253,13 @@ summarise(andmed_grupeeritult, keskmine_pikkus = mean(pikkus))</code></pre>
 <pre class="r"><code>andmed %&gt;%
   group_by(sugu) %&gt;%
   summarise(keskmine_pikkus = mean(pikkus))</code></pre>
+<p><em>Lisamärkus 1.</em> Kui töötlemise tulemust on vaja salvestada eraldi R muutujana, võib tunduda ilus kasutada selleks operaatorit <code>-&gt;</code>.</p>
+<pre class="r"><code>andmed %&gt;%
+  group_by(sugu) %&gt;%
+  summarise(keskmine_pikkus = mean(pikkus)) -&gt; uued_andmed</code></pre>
+<p><em>Lisamärkus 2.</em> Võib-olla on mõistlik mainida, et operaatorit <code>%&gt;%</code> saab kasutada ka teiste funktsioonide (mitte ainult <em>dplyr</em> enda funktsioonide) jaoks.</p>
+<pre class="r"><code>c(1,3) %&gt;% mean() %&gt;% log(base=2)</code></pre>
+<pre><code>## [1] 1</code></pre>
 </div>
 <div id="taiendav-abimaterjal" class="section level3">
 <h3>Täiendav abimaterjal</h3>

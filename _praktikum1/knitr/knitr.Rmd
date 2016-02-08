@@ -8,7 +8,7 @@ Selles aines hakkame kasutama programmi [RStudio](http://www.rstudio.com/), mis 
 
 # Raportid paketiga knitr
 
-Pakett  [**knitr**](http://yihui.name/knitr/) võimaldab R-is vähese vaevaga genereerida raporti oma analüüsi kohta. Eriti mugav on seda kasutada RStudio keskkonnas. Esmalt installeerime vajalikud paketid (seda on vaja teha ainult esmakordsel kasutamisel)
+Pakett  [**knitr**](http://yihui.name/knitr/) võimaldab R-is vähese vaevaga genereerida raporti oma analüüsi kohta. Eriti mugav on seda kasutada RStudio keskkonnas. Esmalt installeerime vajalikud paketid (seda on vaja teha ainult esmakordsel kasutamisel).
 
 ```{r, eval=FALSE}
 install.packages("knitr")
@@ -43,7 +43,7 @@ $(window).load(function(){
 });
 </script>
 
-Kui soovid ise järele proovida, siis allpool on toodud seesama Markdown tekst. Salvesta see tekst `.Rmd` failina RStudios ning seejärel kliki nupul `Knit HTML` või kasutame klahvikombinatsiooni `Ctrl + Shift + K`. 
+Kui soovid ise järele proovida, siis allpool on toodud seesama Markdown tekst. Salvesta see tekst `.Rmd` failina RStudios ning seejärel kliki nupul `Knit HTML` või kasuta klahvikombinatsiooni `Ctrl + Shift + K`. 
 
 ```{r, eval=FALSE}
 ---
@@ -56,7 +56,7 @@ See on Markdown märgenduskeeles kirjutatud dokument.
 
 ## Teise taseme pealkiri
 
-Mugavalt saab kirjutada *kursiivis* ning **rasvases kirjas**. 
+Mugavalt saab kirjutada *kursiivis* ja **rasvases kirjas**. 
 
 ### Kolmanda taseme pealkiri
 
@@ -91,7 +91,7 @@ Koodikasti tekitamiseks on kolm varianti:
 * Klahvikombinatsiooniga `Ctrl + Alt + I`. 
 
 
-Kopeeri nüüd järgnev tekst `.Rmd` faili ning tee sellest html (täpselt sama moodi nagu enne). 
+Kopeeri nüüd järgnev tekst `.Rmd` faili ning tee sellest html (täpselt samamoodi nagu enne). 
 
 <pre class="markdown"><code>---
 output: html_document
@@ -109,7 +109,7 @@ head(x, 3)
 hist(x)
 &#96;&#96;&#96;
 
-R-i koodi saab ka reasiseselt kasutada. Näiteks genereeritud arvude aritmeetiline keskmine on &#96;r mean(x)&#96; ning seda arvutatakse
+R-i koodi saab ka reasiseselt kasutada. Näiteks genereeritud arvude aritmeetiline keskmine on &#96;r mean(x)&#96; ja seda arvutatakse
 $$\frac{1}{n} \sum_{i=1}^{n} x_i$$
 valemi põhjal, kus $n$ näitab genereeritud väärtuste koguarvu. 
 </code></pre>
@@ -142,13 +142,13 @@ output: pdf_document
 
 ```
 
-Pdf-i genereerimisel kasutab knitr TeX-i, seega on vaja, et arvutis oleks installeeritud näiteks MiKTeX. 
+Pdf-i genereerimisel kasutab knitr TeX-i, seega on vaja, et arvutis oleks installeeritud näiteks [MiKTeX](http://miktex.org/).
 
 Alternatiivselt Markdown keelele saab knitr paketi abil kirjutada ka LaTeXi dokumenti (laiendi `.Rmd` asemel tuleb kasutada siis `.Rnw`), aga sellega me käesolevas kursuses ei tegele. 
 
 ### Näpunäiteid
 
-Kui me raportis ei soovi näidata R-i koodi, tuleb koodikasti jaoks spetsifitseerida `echo=FALSE`
+Kui me raportis ei soovi näidata R-i koodi, tuleb koodikasti jaoks spetsifitseerida `echo=FALSE`.
 
 <pre class="markdown"><code>&#96;&#96;&#96;{r, echo=FALSE}
 x = rnorm(100)
@@ -156,11 +156,19 @@ hist(x)
 &#96;&#96;&#96;
 </code></pre>
 
-Kui soovime raportis näidata R-i koodi, aga ei soovi seda jooksutada, tuleb koodikasti jaoks  spetsifitseerida `eval=FALSE`
+Kui soovime raportis näidata R-i koodi, aga ei soovi seda jooksutada, tuleb koodikasti jaoks  spetsifitseerida `eval=FALSE`.
 
 <pre class="markdown"><code>&#96;&#96;&#96;{r, eval=FALSE}
 x = rnorm(100)
 hist(x)
+&#96;&#96;&#96;
+</code></pre>
+
+Kui kirjutame mingi koodibloki sisse `opts_chunk$set(echo = FALSE)`, siis valik `echo = FALSE` määratakse *kõigi järgnevate* koodiblokkide jaoks (nõnda me ei pea seda igas blokis uuesti trükkima).
+
+<pre class="markdown"><code>&#96;&#96;&#96;{r}
+library(knitr)
+opts_chunk$set(echo = FALSE)
 &#96;&#96;&#96;
 </code></pre>
 

@@ -5,28 +5,9 @@ output:
     theme: null
 ---
 
-Tähtaeg: 16.02.2015 23:59 GMT
+Tähtaeg: 16.02.2016 23:59
 
-
-# I osa - andmete analüüs (21 punkti)
-Lahenda [automaatse aktsiaturu ülevaate genereerimise ülesanded](/praktikum1_aktsiad). 
-
-Abimaterjalid:
-
-* [knitr](/praktikum1_knitr)
-* [dplyr](/praktikum1_dplyr)
-
-<div class="message">
-Kui tunned ennast veel ebakindlalt *dplyr* paketi kasutamise osas, siis soovitame ühte järgnevatest:
-
-* Lugeda juhendit [Introduction to dplyr](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
-* Vaadata videot https://www.youtube.com/watch?v=8SGif63VW6E&t=4m5s, kus Hadley Wickham, kes on *dplyr* paketi autor, õpetab *UseR 2014* konverentsil seda paketti
-    * 4:05 - 8:25 sissejuhatus, ülevaade andmestikest
-    * 8:25 - 27:45 funktsioonid `filter`, `select`, `arrange`, `mutate`
-    * 27:45 - 35:40 funktsioonid `summarise`, `group_by`
-</div>
-
-# II osa - veebiloengud, videod, artiklid (4 punkti)
+# I osa - veebiloengud, videod, artiklid (4 punkti)
 1. (**1 punkt**) Vaata Johns Hopkinsi reprodutseeritava analüüsi videosid:
 
 * [Reproducible Research: Concepts and Ideas (Part 1/3)](https://www.youtube.com/watch?v=4rBX6r5emgQ&index=1&list=PLjTlxb-wKvXOU4WW4p3qc4VKWTI4gLNUf)
@@ -45,20 +26,37 @@ Vasta järgmisele küsimusele:
 
 3. (**2 punkti**) Loe artiklit [Researchers Finally Replicated Reinhart-Rogoff, and There Are Serious Problems](http://www.nextnewdeal.net/rortybomb/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems).
 
-Artikkel kirjeldab majandusteadlaste Reinhart ja Rogoffi 2010. aasta publikatsiooni *Growth in a Time of Debt* ning mis vigu riigivõla ja majanduskasvu uurimisel tehti. Järgmises praktikumis uurime sama andmestikku, mida käsitleti ka Reinhart ja Rogoffi artiklis.
+Artikkel kirjeldab majandusteadlaste Reinhart'i ja Rogoff'i 2010. aasta publikatsiooni *Growth in a Time of Debt* ning mis vigu riigivõla ja majanduskasvu uurimisel tehti. Järgmises praktikumis uurime sama andmestikku, mida käsitleti ka Reinhart'i ja Rogoff'i artiklis.
 
 Vasta järgmistele küsimustele:
 
 * Nimeta, mis oli Reinhart'i ja Rogoff'i artikli üks olulisemaid tulemusi.
-* Millel põhines teadlaste Herndon, Ash ja Pollin kriitika majandusteadlaste Reinhart'i ja Rogoff'i teadusartiklile *Growth in a Time of Debt.* (nimeta 3 probleemi).
+* Millel põhines teadlaste Herndon'i, Ash'i ja Pollin'i kriitika majandusteadlaste Reinhart'i ja Rogoff'i teadusartiklile *Growth in a Time of Debt.* (nimeta 3 probleemi).
 
-4. (**1 boonuspunkt**) Kirjuta, kui palju aega kulus osa I ja osa II peale, kommenteeri oma ajakasutust. Mida arvad ülesannetest ja videotest (kasulikkus, huvitavus)?
+# II osa - andmete analüüs (21 punkti)
+Lõpeta praktikumis alustatud [automaatse aktsiaturu ülevaate genereerimise ülesanded](/praktikum1_aktsiad).
+
+Abimaterjalid:
+
+* [knitr](/praktikum1_knitr)
+* [dplyr](/praktikum1_dplyr)
+
+<div class="message">
+Kui tunned ennast veel ebakindlalt *dplyr* paketi kasutamise osas, siis soovitame ühte järgnevatest:
+
+* Lugeda juhendit [Introduction to dplyr](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
+* Vaadata videot https://www.youtube.com/watch?v=8SGif63VW6E&t=4m5s, kus Hadley Wickham, kes on *dplyr* paketi autor, õpetab *UseR 2014* konverentsil seda paketti
+    * 4:05 - 8:25 sissejuhatus, ülevaade andmestikest
+    * 8:25 - 27:45 funktsioonid `filter`, `select`, `arrange`, `mutate`
+    * 27:45 - 35:40 funktsioonid `summarise`, `group_by`
+</div>
 
 # Mida on vaja esitada?
 
-* I osa kohta tuleb esitada nii andmeanalüüsi raport (html või pdf formaadis) kui ka selle lähtekood .Rmd failina.
-* II osa kohta tuleb esitada vastused tekstifailis või kirjutada vastused meili sisusse. 
+* I osa kohta tuleb esitada vastused tekstifailis või kirjutada vastused meili sisusse. 
+* II osa kohta tuleb esitada nii andmeanalüüsi raport (html või pdf formaadis) kui ka selle lähtekood .Rmd failina.
 
-Lahendused saata meili peale: andmeteadus@gmail.com
+
+Lahendused saata meili peale: markgimbutas@gmail.com
 
 
