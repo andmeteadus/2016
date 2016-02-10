@@ -24,7 +24,7 @@ Andmetabelist info kättesaamiseks kasutame R-i paketti *dplyr*. Selle paketi koh
 
 ## Ülevaade andmestikust
 
-Andmestikus on näidatud 502 ettevõtte (kõik need ettevõtted, mis on kuulsas S&P 500 indeksis) kohta järgmised tunnused:
+Andmestikus on näidatud 504 ettevõtte (kõik need ettevõtted, mis on kuulsas S&P 500 indeksis) kohta järgmised tunnused:
 
 * *symbol*: ettevõtte ID börsil
 * *nimi*: ettevõtte nimi
@@ -169,5 +169,5 @@ Mõned näpunäited:
 * kasuks tuleb funktsioon `getQuote`
 * tunnuste loetelu nägemiseks, mida on võimalik *finance.yahoo.com* portaalist saada, on abiks funktsioon `yahooQF()`
 * hinnana kasuta tunnust *Last Trade (Price Only)*, sümbolina *Symbol*, tootlusena *Change in Percent*, kogusena *Volume*, kasumina aktsia kohta *Earnings/Share*, dividendina aktsia kohta *Dividend/Share* 
-* ettevõtte *sektor*, *nimi* ja *aktsiate_arv* võta failist *andmed.csv*. Ühenda see alamandmestik Yahoo'st saadud andmestikuga tunnuse *symbol* alusel (vt`?join` või `?merge`)
+* ettevõtte *sektor*, *nimi* ja *aktsiate_arv* võta failist *aktsiad.csv*. Ühenda see alamandmestik Yahoo'st saadud andmestikuga tunnuse *symbol* alusel (vt`?join` või `?merge`)
 * juhime tähelepanu, et tunnus *tootlus* vajab puhastamist
