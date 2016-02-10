@@ -114,11 +114,11 @@ kauplemisalgoritm = function(x){
 
 > Mati ei ole veel vanemanalüütiku staatust saanud ning ta kardab veidi oma soovituste pärast. Mis juhtub kui aktsiasoovitus osutub katastroofiks? Kui kliendid saavad Mati soovituste pärast hiigelsuuri kahjumeid, siis kõigub ka tema töökoht. Mis oleks kui soovitada ainult populaarseid aktsiaid? Siis saab ju alati öelda, et vanemanalüütikud teistes pankades soovitasid ka ...
 
-Nüüd kirjuta funktsioon *kauplemisalgoritm_turvaline*, kus valid atraktiivseid aktsiaid vaid populaarsete aktsiate hulgast. Populaarsed aktsiad on järgnevad: AAPL, FB, GOOG, IBM, TSLA. 
+Nüüd kirjuta funktsioon *kauplemisalgoritm_turvaline*, kus valid atraktiivseid aktsiaid vaid populaarsete aktsiate hulgast. Populaarsed aktsiad on järgnevad: AAPL, FB, GOOG, IBM. 
 
 Juhised:
 
-* Vali andmestikust välja ainult aktsiad AAPL, FB, GOOG, IBM, TSLA.
+* Vali andmestikust välja ainult aktsiad AAPL, FB, GOOG, IBM.
 * Rakenda saadud alamandmestikul eelnevas ülesandes kirjutatud funktsiooni. 
 
 Kui eelnev töötab, siis kirjuta eelnev kood funktsiooniks.
