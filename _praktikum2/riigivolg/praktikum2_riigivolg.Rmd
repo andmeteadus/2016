@@ -9,13 +9,13 @@ output:
 
 Kati "Makro" Ökonoomika on tavaline Eesti naine, kes saab kõigega hakkama: ta kasvatab üksi last, maksab koguperelaenu ning töötab Euroopa Komisjoni struktuuriüksuses ametnikuna. 2013. aasta alguses andis Olli Rehn, üks toonastest 28-st Euroopa Komisjoni volinikust, talle ülesandeks uurida võlakoorma mõju majanduskasvule.
 
-Kati teadis, et hea uurimus peab põhinema andmetel mitte ekspertide kõhutundel. Peagi leidis ta artikli *Growth in a Time of Debt*, mille põhitulemuseks oli, et kõrgem riigivõlg on seotud madalama majanduskasvuga ning väga probemaatiline on riigivõlg, mis on üle 90% SKP-st. Artikkel tundus usaldusväärne, sest artikli autoriteks on tunnustatud majandusteadlased Harvardist, artiklit oli tsiteeritud sel hetkel juba üle 500 korra ning see põhines 50-aastasel perioodil.
+Kati teadis, et hea uurimus peab põhinema andmetel, mitte ekspertide kõhutundel. Peagi leidis ta artikli [*Growth in a Time of Debt*](http://www.nber.org/papers/w15639), mille põhitulemuseks oli, et kõrgem riigivõlg on seotud madalama majanduskasvuga ning väga probemaatiline on riigivõlg, mis on üle 90% SKP-st. Artikkel tundus usaldusväärne, sest artikli autoriteks on tunnustatud majandusteadlased Harvardist, artiklit oli tsiteeritud sel hetkel juba üle 500 korra ning see põhines 50-aastasel perioodil.
 
 Juba 9. aprillil 2013 kasutas Olli Rehn oma kõnes Rahvusvahelisele Tööorganisatsioonile Kati leitut:
 
 > public debt in Europe is expected to stabilise only by 2014 and to do so at above 90% of GDP. Serious empirical research has shown that at such high levels, public debt acts as a permanent drag on growth.
 
-Kati tundis, et ta oma tööd hasti teinud ja unistas aastalõpu boonusest. Tema sisemine rahulolu jäi aga üürikeseks. Majandusteadlased (Herndon, Ash, Pollin) ülikoolist UMass Amherst avaldasid teadusartikli, kus väitsid, et Reinhart-Rogoffi metoodikas on tõsiseid vigu sees, alustades Exceli arvutusveast, andmete väljajätmisest ja valest kaalumismeetodist. Majandusteemalised ajalehed olid täis kriitilisi kommentaare, sest Exceli viga on ju hoomatav kõigile.
+Kati tundis, et ta oma tööd hästi teinud ja unistas aastalõpu boonusest. Tema sisemine rahulolu jäi aga üürikeseks. Majandusteadlased (Herndon, Ash, Pollin) ülikoolist UMass Amherst avaldasid teadusartikli, kus väitsid, et Reinhart-Rogoffi metoodikas on tõsiseid vigu sees, alustades Exceli arvutusveast, andmete väljajätmisest ja valest kaalumismeetodist. Majandusteemalised ajalehed olid täis kriitilisi kommentaare, sest Exceli viga on ju hoomatav kõigile.
 
 ![alt text](reinhart_rogoff_coding_error.png "Näide")
 
@@ -27,16 +27,17 @@ Moodustati kriisikomisjon, mida pandi juhtima Kati. Vaja on teha suurele hulgale
 
 * *riik*: mis riigi kohta näitajad on toodud
 * *aasta*: mis aasta kohta käivad SKP kasv ja võlakoorma-SKP suhe
-* *vola_skp_suhe*: võlakoorma ja SKP suhe
+* *vola_skp_suhe*: võlakoorma ja SKP suhe protsentides
 * *skp_kasv*: SKP kasvunumber
 * *exceli_viga*: binaarne tunnus, mis näitab, kas andmepunkt jäi RR analüüsist välja Exceli *arvutusvea* tõttu (kui on 1, siis jäi välja)
 * *valikuline*: binaarne tunnus, mis näitab, kas andmepunkt jäi RR analüüsist välja (HAP väitel selekteerimise tõttu, RR väitel, et neid andmeid analüüsi tegemise ajal polnud. Kui on 1, siis jäi RR analüüsist välja.)
 
-Laadi alla andmestik [skp_ja_volg.csv](/data/skp_ja_volg.csv) ja loe töökeskkonda.
+Laadi alla andmestik [skp_ja_volg.csv](../data/skp_ja_volg.csv) ja loe töökeskkonda.
 
 ### Ülesanne 1 (2 punkti) - RR ja HAP tulemuste reprodutseerimine
 
-Kontrolli, kas suudad reprodutseerida RR ja HAP tulemused
+Kontrolli, kas suudad reprodutseerida RR ja HAP tulemused.
+Praktikumis tutvusime paketi *dplyr* [%>% operaatoriga](../praktikum1_dplyr). Soovitame seda kasutada selle ülesande lahendamisel.
 
 Juhised: 
 
@@ -134,7 +135,7 @@ Kõigepealt, tehke joonis, kus oleks näha seos SKP ja võlakoormuse vahel. Seose i
 
 Näinud seost andmestikus, tekib küsimus, ega see seos ei ole lihtsalt juhuslik. Ehk kas vaadeldud seos erineb oluliselt seostest sellistes andmestikes, kus tegelikult SKP ja võlakoormuse vahel mingisugust seost ei eksisteeri. 
 
-Selle visuaalseks kontrollimiseks võime kasutada järgmist skeemi. See põhineb permutatsioonitestil, mille kohta vaadake esmalt [kodutöö osa III](/praktikum2_kodutoo) videot https://www.youtube.com/watch?v=5Dnw46eC-0o
+Selle visuaalseks kontrollimiseks võime kasutada järgmist skeemi. See põhineb permutatsioonitestil, mille kohta vaadake esmalt [kodutöö osa I](../praktikum2_kodutoo) videot https://www.youtube.com/watch?v=5Dnw46eC-0o
 
 Skeem:
 
