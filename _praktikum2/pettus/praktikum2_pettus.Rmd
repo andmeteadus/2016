@@ -51,7 +51,7 @@ Kuna ülesannetes on vaja teha *ggplot2* abil jooniseid, soovitame esmalt vaadata
 
 ## Maksude andmestik
 
-Loe sisse Maksu- ja Tolliameti [maksude andmestik](/data/tolliamet_maksud.csv) ja tutvu andmetega. Andmestikus on järgnevad tunnused:
+Loe sisse Maksu- ja Tolliameti [maksude andmestik](../data/tolliamet_maksud.csv) ja tutvu andmetega. Andmestikus on järgnevad tunnused:
 
 * *registrikood*: juriidilise isiku registrikood
 * *nimi*: juriidilise isiku nimi
@@ -86,7 +86,7 @@ Kas sellest võib järeldada, et FIE-d jahmerdavad maksudega?
 
 ## 2013 KOV valimiste hääletustulemuste andmestik
 
-Loe sisse [andmestik](/data/KOV_valimised_2013.csv) ja tutvu andmetega. Andmestikus on järgnevad tunnused:
+Loe sisse [andmestik](../data/KOV_valimised_2013.csv) ja tutvu andmetega. Andmestikus on järgnevad tunnused:
 
 * *id*: kandidaadi ID
 * *KOV*
