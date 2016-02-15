@@ -16,7 +16,7 @@ opts_chunk$set(warning=FALSE, message=FALSE, fig.width=6, fig.height=4)
 
 Suurepärane ülevaate paketi võimalustest annab **ggplot2 dokumentatsioon** <http://docs.ggplot2.org/current/>. 
 
-Ggplot2 autoriks on [Hadley Wickham](http://had.co.nz/). Pakett toetub nn graafikute grammatikale (***Grammar of Graphics***), mille avaldas Leland Wilkinson 2005. aastal. Selle grammatika eesmärk on kirjeldada, mida õieti kujutab endast üks graafik. Nii nagu tavakeeles defineerib grammatika sõnaliigid, mille kombineerimisel saame tekitada suvalisi lauseid, defineerib analoogiliselt graafikute grammatika sellised põhikomponendid, mille kombineerimisel on võimalik tekitada suvalisi graafikuid. Hadley on kirjutanud järgnevat:
+*ggplot2* autoriks on [Hadley Wickham](http://had.co.nz/). Pakett toetub nn graafikute grammatikale (***Grammar of Graphics***), mille avaldas Leland Wilkinson 2005. aastal. Selle grammatika eesmärk on kirjeldada, mida õieti kujutab endast üks graafik. Nii nagu tavakeeles defineerib grammatika sõnaliigid, mille kombineerimisel saame tekitada suvalisi lauseid, defineerib analoogiliselt graafikute grammatika sellised põhikomponendid, mille kombineerimisel on võimalik tekitada suvalisi graafikuid. Hadley on kirjutanud järgnevat:
 
 > In brief, the grammar tells us that a statistical graphic is a mapping from data to aesthetic attributes (colour, shape, size) of geometric objects (points, lines, bars).
 
@@ -31,7 +31,7 @@ Funktsioonil `qplot` on mõned eelised võrreldes `ggplot`-iga:
 
 Siiski on `qplot`-il ka mitmeid puuduseid võrreldes võimalusterohkema funktsiooniga `ggplot`:
 
-* **Piiratud võimalused**: Ggplot2 paketiga saab erinevate kihtide kombineerimisel teha väga paindlikke jooniseid, aga `qplot` funktsioon võimaldab korraga visualiseerida ainult ühte andmestikku, seejuures peavad kõigil kihtidel olema värv, punktisuurus, kuju jne samasugused. 
+* **Piiratud võimalused**: *ggplot2* paketiga saab erinevate kihtide kombineerimisel teha väga paindlikke jooniseid, aga `qplot` funktsioon võimaldab korraga visualiseerida ainult ühte andmestikku, seejuures peavad kõigil kihtidel olema värv, punktisuurus, kuju jne samasugused. 
 * `qplot` süntaks **ei aita aru saada paketi loogikast** (mis põhineb *Grammar of Graphics*-il), milliste kihtide kombineerimisel väljundgraafik loodi. Nii ei teki sügavamat arusaamist, kuidas pakett toimib ning kuidas vajadusel modifitseerida jooniseid. 
 * Tegelikult on `qplot` funktsioon sisuliselt *wrapper* `ggplot` jaoks, nii et funktsiooniga `ggplot` saab teha kõike sedasama, mida `qplot`iga, aga `ggplot` on palju paindlikum. 
 
@@ -53,9 +53,9 @@ ggplot(andmed, aes(x = tunnus1, y = tunnus2))
 
 kus esimese argumendina on ette antud andmestik ning teise argumendina *aesthetic mapping*. Seejuures `aes()` argumendid peavad olema ette antud andmestiku veergude nimed.
 
-Praeguseks hetkeks pole veel võimalik joonist vaadata, sest me pole joonisele ühtegi kihti lisanud (st me pole spetsifitseerinud, milliseid elemente sooviksime joonisel näha - antud *x, y* koordinaadid oleks võimalik tähistada nii punktidega, tulpadega, ühendada joontega jne). Näiteks punktide joonistamiseks peaksime lisama joonisele kihi `geom_point()`.
+Praeguseks hetkeks pole veel võimalik joonist vaadata, sest me pole joonisele ühtegi kihti lisanud (st me pole spetsifitseerinud, milliseid elemente sooviksime joonisel näha - antud *x, y* koordinaadid oleks võimalik tähistada nii punktidega, tulpadega, ühendada joontega jne). Näiteks punktide joonistamiseks peaksime lisama joonisele punktide kihi käsuga `geom_point()`.
 
-Järgnevalt tutvume ggplot2 võimalustega näidete abil, mis põhinevad iiriste andmestikul
+Järgnevalt tutvume *ggplot2* võimalustega näidete abil, mis põhinevad iiriste andmestikul
 
 ```{r}
 # lae andmestik "iris"
