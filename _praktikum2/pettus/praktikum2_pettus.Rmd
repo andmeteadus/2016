@@ -63,7 +63,7 @@ Loe sisse Maksu- ja Tolliameti [maksude andmestik](../data/tolliamet_maksud.csv)
 
 ### Ülesanne 1 (2 punkti)
 
-Tee 3 joonist, mis iseloomustavad hästi seda andmestikku.
+Tee 3 joonist, mis iseloomustavad hästi seda andmestikku. Iga joonise juurde kirjuta üks lause, mida see joonis sinu arvates näitab.
 
 ```{r}
 # sinu kood
@@ -99,7 +99,7 @@ Loe sisse [andmestik](../data/KOV_valimised_2013.csv) ja tutvu andmetega. Andmes
 
 ### Ülesanne 3 (2 punkti)
 
-Tee 3 joonist, mis iseloomustavad hästi seda andmestikku.
+Tee 3 joonist, mis iseloomustavad hästi seda andmestikku. Iga joonise juurde kirjuta üks lause, mida see joonis sinu arvates näitab.
 
 ```{r}
 # sinu kood
@@ -144,6 +144,7 @@ Näpunäited:
 * Legendi peitmiseks uuri [järgmisi ggplot2 näiteid.](http://docs.ggplot2.org/current/theme.html)  (märksõnaks on `legend.position`)
 * Et muuta värvid vastavaks erakonna sümboolikaga, kasuta värve "#00983A, #FFDE00, #009FE3, #82368C, #E30613" (vastavalt KESK, REF, IRL, Muu, SDE värvid.)
 * Värvide muutmiseks uuri [järgmisi ggplot2 näiteid.](http://docs.ggplot2.org/current/scale_manual.html)
+* Käsuga `facet_wrap` tükkideks jagatud joonistel on võimalik lubada erinevatele tükkidele erineva ulatusega skaalasid. Selleks uuri [näiteid](http://docs.ggplot2.org/current/facet_wrap.html).
 
 
 ### Boonusülesanne 1 (2 punkti)
