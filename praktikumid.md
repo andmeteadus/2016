@@ -28,7 +28,8 @@ Pakett knitr. Markdown. Pakett dplyr. Näide: automaatne aktsiaturu ülevaade.
 17.02.2016
 
 Reprodutseeritav analüüs. Näide: Kas suur võlakoorem vähendab riigi majanduskasvu? Joonised paketiga ggplot2.
-Pettuse tuvastamine Benfordi seaduse abil. 
+Pettuse tuvastamine Benfordi seaduse abil.
+
 * Praktikumis kasutatud materjalid:
     * [ggplot2 minimalistlik näide](../praktikum2_ggplot2)
     * Karpdiagrammide tõlgendamise [ülesanne 1](../slides/praktikum2_boxplot_quiz1.pdf) ja [ülesanne 2](../slides/praktikum2_boxplot_quiz2.pdf)
