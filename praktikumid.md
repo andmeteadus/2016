@@ -44,6 +44,12 @@ Pettuse tuvastamine Benfordi seaduse abil.
 
 Joonised paketiga ggplot2: erinevad joonisetüübid. Interaktiivsed rakendused paketiga shiny. Näide: ÕISi tagasiside visualiseerimine. 
 
+* Praktikumis kasutatud materjalid:
+    * [reshape2 minimalistlik näide](../praktikum3_reshape)
+    * [jaotuste ära arvamise ülesanne](../praktikum3_quiz1) ja [graafikute tajumise ülesanne](../praktikum3_quiz2)
+* [Õppetulemuste visualiseerimise ülesanded](../praktikum3_oppeained)
+* [Kodutöö](../praktikum3_kodutoo)
+    * Tähtaeg 08.03.2016 kell 23:59.
 
 ## Praktikum 4
 

@@ -9,11 +9,11 @@ output:
 
 ![alt text](lai_ja_pikk.png "Näide")
 
-Laias formaadis andmestik - üks rida vastab ühele objektile.
+Laias formaadis andmestik - üks rida vastab ühele objektile. Selles reas on kirjas kõik, mis antud objekti kohta üldse mõõdetud on.
 
-Pikas formaadis andmestik - sama omadust kirjeldavad andmed on ühes veerus. Üks objekt võib esineda mitmel real.
+Pikas formaadis andmestik - ühe objekti andmed võivad esineda mitmel real. Iga rida kirjeldab ühe objekti ühte tunnust. Loomulikult võib laia ja pika formaadi vahel olla palju vahepealseid variante -- näiteks ka ülaltoodud pikka formaati saab veel pikemaks venitada (kuidas?).
 
-Paljud paketid tahavad sisendiks pikas formaadis andmeid (nt `ggplot2` pakett või funktsioonid `lm(), glm()`). Inimestel on aga mugavam vaadelda ja sisestada andmeid pikas formaadingus. Loe artiklist [Tidy Data](http://www.jstatsoft.org/v59/i10/paper), milline on Hadley Wickham'i arvates hea andmete esitusviis. 
+Paljud paketid tahavad sisendiks pikas formaadis andmeid (nt `ggplot2` pakett või funktsioonid `lm(), glm()`). Inimestel on aga mugavam vaadelda ja sisestada andmeid laias formaadis. Loe artiklist [Tidy Data](http://www.jstatsoft.org/v59/i10/paper), milline on Hadley Wickham'i arvates hea andmete esitusviis. 
 
 Järgnevalt on toodud minimalistlikud näited, mis iseloomustavad paketi `reshape2` funktsionaalsust.
 
