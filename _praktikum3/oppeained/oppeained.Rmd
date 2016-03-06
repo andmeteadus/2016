@@ -54,7 +54,8 @@ Kas mõnes õppeaines saavad üliõpilased paremaid hindeid kui mõnes teises? M
 
 Juhised:
 
-* Vali välja sobiv joonisetüüp. Selleks võid kasutada mõnda eelmises ülesandes välja pakutud lahendust või pakkuda välja enda variandi. (Näiteks võid teha analoogilise joonise nagu ülesande 1 kolmas joonis, ainult et teaduskondade rollis oleksid õppeained. Samas võid ka teha näiteks tulpdiagrammi, mis näitaks iga õppeaine keskmist hinnet.)
+* Vali välja sobiv joonisetüüp. Selleks võid kasutada mõnda eelmises ülesandes välja pakutud lahendust või pakkuda välja enda variandi. (Näiteks võid teha alloleva joonisega analoogilise joonise, ainult et teaduskondade rollis oleksid õppeained. Samas võid ka teha näiteks tulpdiagrammi, mis näitaks iga õppeaine keskmist hinnet.)
+![](joonis3.png)
 * Vaatle väiksemat andmestikku, kus teaduskond ja semester oleksid fikseeritud. Näiteks võid valida matemaatika-informaatikateaduskonna ning kevadsemestri.  
 (Järgmises ülesandes tuleb koodi natuke modifitseerida, et rakenduse kasutaja saaks ise valida teda huvitava teaduskonna ja semestri.)
 * Vaatle ainult selliseid aineid, kus oli vähemalt 5 registreerunut. 
