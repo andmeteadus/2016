@@ -12,7 +12,7 @@ Joonis on atraktiivne ja annab hästi edasi FB visiooni. Seda sama joonist näidat
 
 ### Tutvumine andmestikuga
 
-Laadi alla andmestikud [airports.csv](/data/airports.csv) ja [flights.csv](/data/flights.csv) ning loe need töökeskkonda.
+Laadi alla andmestikud [airports.csv](../data/airports.csv) ja [flights.csv](../data/flights.csv) ning loe need töökeskkonda.
 
 Andmestikus *airports.csv* on informatsioon lennujaamade kohta. Selles on järgnevad tunnused:
 
