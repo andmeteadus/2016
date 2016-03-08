@@ -29,7 +29,7 @@ Kasutame NBA 2013/14 hooaja andmeid. Andmestikus on järgnevad tunnused:
 * *x* - viske x-koordinaat
 * *y* - viske y-koordinaat
 
-Laadi alla andmestik [nba_2013.csv](/data/nba_2013.csv) ja loe töökeskkonda.
+Laadi alla andmestik [nba_2013.csv](../data/nba_2013.csv) ja loe töökeskkonda.
 
 
 ### Ülesanne 1 (1 punkt)
