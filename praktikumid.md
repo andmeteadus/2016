@@ -57,6 +57,10 @@ Joonised paketiga ggplot2: erinevad joonisetüübid. Interaktiivsed rakendused p
 
 Mittestandardne graafika. Kuidas teha sama häid jooniseid nagu NY Times seda teeb? Näide: NBA andmestik.
 
+* [NBA ülesanded](../praktikum4_nba)
+* [Lennuliikluse visualiseerimise ülesanded](../praktikum4_geo)
+* [Kodutöö](../praktikum4_kodutoo)
+    * Tähtaeg 15.03.2016 kell 23:59.
 
 ## Praktikum 5
 
