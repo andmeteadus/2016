@@ -23,14 +23,14 @@ Järgmises praktikumis kasutame peakomponentanalüüsi, seetõttu seisneb kodutöö II
 
 * Kuidas valitakse esimese peakomponendi suund (st millise kriteeriumi järgi valitakse esimene peakomponent)?
 
-(**1 punkt**) Vaata Stanfordi masinõppe kursuse videot [Principal Component Analysis Problem Formulation](https://www.youtube.com/watch?v=jY0281gSBTo)
+(**1 punkt**) Vaata Stanfordi masinõppe kursuse videot [Principal Component Analysis Problem Formulation](https://www.youtube.com/watch?v=WGXcIlJhc58)
 
 * Mida uut said siit videost teada lisaks eelnevale kahele? Kumb meeldis rohkem? 
 
 Lisaks võid uurida [Explained Visually: Principal Component Analysis](http://setosa.io/ev/principal-component-analysis/)
 
 # Projekti teema otsimine (**5 boonuspunkti**)
-Mõtle välja enda projekti teema. Kirjuta väga lühike ülevaade, milles projekt seisneb, kust andmed saad jne. Juhul, kui tegu on paaristööga, siis ka kaasüliõpilase nimi. Projekti juhendi leiad [siit](../projekti_juhend/). See "boonusülesanne" jääb üles projekti esitamise tähtajani.
+Mõtle välja enda projekti teema. Kirjuta väga lühike ülevaade, milles projekt seisneb, kust andmed saad jne. Juhul, kui tegu on paaristööga, siis ka kaasüliõpilase nimi. Projekti juhendi leiad [siit](../projekt_juhend/). See "boonusülesanne" jääb üles projekti esitamise tähtajani.
 
 # Mida on vaja esitada?
 

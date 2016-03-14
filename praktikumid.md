@@ -68,6 +68,11 @@ Mittestandardne graafika. Kuidas teha sama häid jooniseid nagu NY Times seda te
 
 Andmete kraapimine veebist. Näide: Riigikogu saadikute hääletamismustrid.
 
+* Abimaterjal:
+    * [rvest minimalistlik näide](../praktikum5_rvest_minimal)
+* [Veebi kraapimise ülesanded](../praktikum5_web)
+* [Kodutöö](../praktikum5_kodutoo)
+    * Tähtaeg 22.03.2016 kell 23:59.
 
 ## Praktikum 6
 

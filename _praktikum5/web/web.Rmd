@@ -156,7 +156,7 @@ url = "http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-
 
 ### ‹lesanne 4 (2 punkti)
 
-* Eralda kooseluseaduse eelnıu h‰‰letamistulemuste  [veebilehelt](http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/661ac414-3481-4f58-8f30-680bc045cfcf/) andmetabel, kus on 101 rida ja tunnused *Nimi*, *Otsus* ja *Fraktsioon*.
+* Eralda kooseluseaduse eelnıu h‰‰letamistulemuste  [veebilehelt](http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/a85129ed-4873-4b9d-ac37-4788b6587fa0/) andmetabel, kus on 101 rida ja tunnused *Nimi*, *Otsus* ja *Fraktsioon*.
 
 Vihje: kasuta funktsiooni `html_table`.
 
