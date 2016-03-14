@@ -4,10 +4,15 @@ output:
   html_document:
     theme: null
 ---
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+opts_chunk$set(warning=FALSE, message=FALSE)
+```
 
-Veebis on aina rohkem andmeid struktureerimata kujul. Näiteks ilmaennustusi, korterite hindu, geograafilist infot, sotsiaalvõrgustike andmeid, valimistulemusi, aktsiahindu või ajalehe artikleid ei ole alati saadaval csv või Exceli failina. Alati on võimalik andmeid manuaalselt kopeerida, aga see on tülikas, aeganõudev ning vigaderohke. Veebilehtedel oleva info automatiseeritud eraldamiseks on suuresti kaks võimalust:
 
-1. **Rakendusliidesed** (*web API*) - struktureeritud http päringud tagastavad andmed (üldjuhul) *JSON* või *XML* formaadis
+Veebis on aina rohkem andmeid struktureerimata kujul. Näiteks ilmaennustusi, korterite hindu, geograafilist infot, sotsiaalvõrgustike andmeid, valimistulemusi, aktsiahindu või ajalehe artikleid ei ole alati saadaval csv või Exceli failina. Alati on võimalik andmeid manuaalselt kopeerida, aga see on tülikas, aeganõudev ja vigaderohke. Veebilehtedel oleva info automatiseeritud eraldamiseks on suuresti kaks võimalust:
+
+1. **Rakendusliidesed** (*web API*) - struktureeritud http päringud tagastavad andmed (üldjuhul) *JSON* või *XML* formaadis.
 
 Näiteks soovides kodeerida aadressi *Juhan Liivi 2, Tartu, Tartu linn* laius- ja pikkuskraadideks kasutades Google Geocoding API-t, annab päring "http://maps.googleapis.com/maps/api/geocode/json?address=Juhan+Liivi+2,+Tartu,+Tartu+linn" tulemuseks JSON faili, millest tükikene on näidatud järgnevalt:
 
@@ -35,8 +40,8 @@ Praktikumis keskendume sellele, kuidas infot eraldada lähtekoodist.
 
 NB! Mängureeglid:
 
-1. Vaata, kas andmed on struktureeritud kujul olemas või on veebilehel olemas API.
-2. Vaata ja austa veebilehe robots.txt faili (nt [www.postimees.ee/robots.txt](http://www.postimees.ee/robots.txt)). See määrab, milliseid kohti veebilehest *lubatakse* robotil protsessida.
+1. Vaata, kas andmed on struktureeritud kujul olemas või on veebilehel olemas API (kui on, siis kasuta neid ja ära kraabi).
+2. Vaata ja austa veebilehe robots.txt faili (nt [ut.ee/robots.txt](http://www.ut.ee/robots.txt)). See määrab, milliseid kohti veebilehest *lubatakse* robotil protsessida.
 3. Kraabi ainult neid andmeid, mida vajad.
 4. Oota teatud aeg (näiteks 1 sekund) pärast iga uut päringut.
 
@@ -63,7 +68,7 @@ Et näha tulemust, võid ülevaloleva koodi salvestada .html failina ning avada bra
 
 Lühidalt kokku võttes: HTML koosneb siltidest (*tags*), mis märgitakse sümbolite < > vahele ning mille abil kirjeldatakse veebilehe struktuuri.
 
-Rohkem infot HTML siltide kohta leiad [siit](http://www.w3schools.com/tags/default.asp)
+Rohkem infot HTML siltide kohta leiad [siit](http://www.w3schools.com/tags/default.asp).
 
 HTML määrab veebilehe üldise struktuuri. Et muuta teksti värvi ja muud stiili, selleks kasutatakse CSS-i.
 
@@ -80,7 +85,7 @@ Rohkem infot HTMLi ja CSS kohta leiad:
 * http://www.w3schools.com/html/
 * http://www.w3schools.com/css/default.asp
 
-CSS-i õppimiseks on tore *tutorial* 
+CSS-i õppimiseks on tore *tutorial*:
 
 * http://flukeout.github.io/
 
@@ -93,7 +98,7 @@ CSS-i õppimiseks on tore *tutorial*
 
 ![alt text](veebi_kraapimine_minimal.png "Näide")
 
-Minimaalne näide, kuidas eelneval pildil näidatud [HTML lähtekoodist](/examples/minimal_html.html) eraldada pealkirja ja lõiku.
+Minimaalne näide, kuidas eelneval pildil näidatud [HTML lähtekoodist](../examples/minimal_html.html) eraldada pealkirja ja lõiku.
 
 ```{r}
 library(rvest)
@@ -113,7 +118,7 @@ html_source = '
 </html>
 '
 
-page = html(html_source)
+page = read_html(html_source)
 
 # pealkirja eraldamine
 page %>% 
@@ -126,11 +131,11 @@ page %>%
   html_text()
 ```
 
-Pane tähele, et funktsioonile html võib ette anda kas veebilehe urli, faili asukoha või sõne.
+Funktsioonile `read_html` võib ette anda kas veebilehe urli, faili asukoha või sõne.
 
 #### XML
 
-XML on märgistuskeel, mille eesmärgiks on struktureeritud info jagamine. XML koosneb kasutaja defineeritud siltidest (tags), mis märgitakse sümbolite < > vahele ning mille abil kirjeldatakse andmete struktuuri. Järgnevalt on toodud minimalistlik näide, kuidas [XML failist]((/examples/minimal_xml.xml)) eraldada infot.
+XML on märgistuskeel, mille eesmärgiks on struktureeritud info jagamine. XML koosneb kasutaja defineeritud siltidest (tags), mis märgitakse sümbolite < > vahele ja mille abil kirjeldatakse andmete struktuuri. Järgnevalt on toodud minimalistlik näide, kuidas [XML failist](../examples/minimal_xml.xml) eraldada infot.
 
 ```{r}
 library(rvest)
@@ -149,7 +154,7 @@ xml_source = '
 </inimesed>
 '
 
-page = html(xml_source)
+page = read_html(xml_source)
 
 # vanuste eraldamine
 page %>% 
@@ -159,6 +164,6 @@ page %>%
 
 ```
 
-Funktsiooni `html` asemel võib kasutada funktsiooni `xml` või `html_node` asemel `xml_node`, kuid vastavad XML-ekvivalendid kutsuvad välja vastavad html funktsioonid, seega ei ole vahet kumba varianti kasutada.
+Funktsiooni `read_html` asemel võib kasutada funktsiooni `read_xml` või `html_node` asemel `xml_node`, kuid vastavad XML-ekvivalendid kutsuvad välja vastavad html funktsioonid, seega ei ole tegelikult vahet, kumba varianti kasutada.
 
 Uuri ka [*rvest* dokumentatsiooni](http://cran.r-project.org/web/packages/rvest/rvest.pdf).

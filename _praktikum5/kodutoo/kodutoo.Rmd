@@ -5,11 +5,11 @@ output:
     theme: null
 ---
 
-Tähtaeg: 23.03.2015 23:59 GMT
+Tähtaeg: 22.03.2016 kell 23:59.
 
 # I osa
 
-(**21 punkti**) Lahenda praktikumis alustatud [andmete veebist kraapimise](/praktikum5_web) ülesanded.
+(**21 punkti**) Lahenda praktikumis alustatud [andmete veebist kraapimise](../praktikum5_web) ülesanded.
 
 # II osa
 
@@ -29,12 +29,13 @@ Järgmises praktikumis kasutame peakomponentanalüüsi, seetõttu seisneb kodutöö II
 
 Lisaks võid uurida [Explained Visually: Principal Component Analysis](http://setosa.io/ev/principal-component-analysis/)
 
-(**1 boonuspunkt**) Kirjuta, kui palju aega kulus osa I ja II peale. Mida arvad ülesannetest (kasulikkus, huvitavus)?
-
+# Projekti teema otsimine (**5 boonuspunkti**)
+Mõtle välja enda projekti teema. Kirjuta väga lühike ülevaade, milles projekt seisneb, kust andmed saad jne. Juhul, kui tegu on paaristööga, siis ka kaasüliõpilase nimi. Projekti juhendi leiad [siit](../projekti_juhend/). See "boonusülesanne" jääb üles projekti esitamise tähtajani.
 
 # Mida on vaja esitada?
 
 * I osa kohta tuleb esitada nii andmeanalüüsi raport (html või pdf formaadis) kui ka selle lähtekood .Rmd failina.
 * II osa vastused tuleb kirjutada meili sisusse või esitada tekstifailina.
+* Enda valitud projekti teema tuleb kirja panna [siia](https://docs.google.com/document/d/1PgtxrRhSpx22JSpE-jEm8t4XHATXs4PXPlJNEhpIIfU/edit?usp=sharing) ja vajalikud lühiülevaade saada koos II osa vastustega.
 
-Lahendused saata meili peale: andmeteadus@gmail.com
+Lahendused saata meili peale: markgimbutas@gmail.com

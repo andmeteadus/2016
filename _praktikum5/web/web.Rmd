@@ -9,7 +9,7 @@ output:
 
 Eva "Usin" Masin on esimeses praktikumis kohatud Mati "Raha" Masina vastand. Talle meeldib rutiinsus, andmete tuim kopeerimine ja sisestamine. Vabal ajal meeldib talle lugeda romaanisarja "Tõde ja õigus" - eelmine nädal luges ta kokku tähekombinatsiooni "pa" esinemissageduse. Homme pärast tööd jätkab ta "pb" esinemissageduse leidmisega.
 
-Kahjuks oli eelnev tekst fiktsioon ning eva-laadsed kopeerijad surid välja koos neandertaallastega. 
+Õnneks oli eelnev tekst fiktsioon ja Eva-laadsed kopeerijad surid välja koos neandertaallastega. 
 Selles praktikumis vaatame, kuidas R-is ellu äratada tehis-Eva, kes oskab veebilehtedelt automaatselt infot eraldada ja selle transformeerida struktureeritud andmestikuks. 
 
 Täpsemalt, uurime
@@ -24,27 +24,27 @@ Kaks esimest ülesannet õpetavad paketi *rvest* funktsionaalsust ja annavad sisse
 
 ### Ülesanne 1 (2 punkti) - CSS id
 
-Eralda [html koodis](/examples/html1.html) sinisena olev tekst muutujasse `tekst`. Kasuta paketti *rvest*. 
+Eralda [html koodis](../examples/html1.html) sinisena olev tekst muutujasse `tekst`. Kasuta paketti *rvest*. 
 
 ![alt text](veebi_kraapimine_ex2.png "Näide")
 
 * Vastava html koodiga saad mängida [siin](http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_id).
 
-* Loe lühiülevaadet, [millest koosnevad veebilehed](http://andmeteadus.github.io/praktikum5_rvest_minimal).
+* Loe lühiülevaadet, [millest koosnevad veebilehed](../praktikum5_rvest_minimal).
 
-* Uuri paketi [*rvest* minimalistlikku näidet](http://andmeteadus.github.io/praktikum5_rvest_minimal).
+* Uuri paketi [*rvest* minimalistlikku näidet](../2016/praktikum5_rvest_minimal).
 
 * Minimalistliku näite põhjal peaksid oskama eraldada lähtekoodis olevad 4 lõiku. Et eraldada lõik, kus id="p01", pead teadma, kuidas CSS-is tähistatakse id-sid.
 Suur vihje on olemas eelneva html koodi < style > blokis. Abiks võib-olla ka [CSS selektorite interaktiivne testnäide](http://www.w3schools.com/cssref/trysel.asp).
 
 * (**1 boonuspunkt**) CSS selektorite õppimiseks on tore tutorial http://flukeout.github.io/. Tee läbi esimesed 6 taset ja saada vastused tekstina.
 
-* Uuri paketi [*rvest* dokumentatsiooni](http://cran.r-project.org/web/packages/rvest/rvest.pdf). Kasuks tulevad funktsioonid `html, html_node, html_nodes ja html_text`.
+* Uuri paketi [*rvest* dokumentatsiooni](http://cran.r-project.org/web/packages/rvest/rvest.pdf). Kasuks tulevad funktsioonid `html`, `html_node`, `html_nodes` ja `html_text`.
 
 * Lõpptulemuse peaks olema selline: `tekst = c("I am different.")`
 
 ```{r}
-url = "http://andmeteadus.github.io/examples/html1.html"
+url = "http://andmeteadus.github.io/2016/examples/html1.html"
 
 # sinu kood
 ```
@@ -81,7 +81,7 @@ print(tekst)
 
 ### Ülesanne 2 (2 punkti) - CSS class
 
-Eralda [html koodis](/examples/html2.html) punaselt olev tekst muutujasse `tekst`. Kasuta paketti *rvest*. 
+Eralda [html koodis](../examples/html2.html) punaselt olev tekst muutujasse `tekst`. Kasuta paketti *rvest*. 
 
 ![alt text](veebi_kraapimine_ex1.png "Näide")
 
@@ -127,7 +127,7 @@ print(tekst)
 
 ### Ülesanne 3 (2 punkti)
 
-Eralda Riigikogu hääletamistulemuste veebilehe [html lähtekoodist](http://www.riigikogu.ee/?op=ems&page=haaletus&hid=a85129ed-4873-4b9d-ac37-4788b6587fa0&), mitu saadikut hääletas kooseluseaduse eelnõu:
+Eralda Riigikogu hääletamistulemuste  [veebilehelt](http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/a85129ed-4873-4b9d-ac37-4788b6587fa0/) (lähtekoodi nägemiseks paremklikk ja Wiew Page Source), mitu saadikut hääletas kooseluseaduse:
 
 * poolt
 * vastu
@@ -141,10 +141,13 @@ Eralda Riigikogu hääletamistulemuste veebilehe [html lähtekoodist](http://www.ri
 > 
 > Need muudavad lähtekoodis õige klassi, id või sildi leidmise oluliselt lihtsamaks. Mõnes olukorras on kasulikum üks variant, mõnes teine. 
 
-Vihje: Kasutada paketi *tidyr* funktsiooni `extract_numeric()` kui sa ei taha regulaaravaldistega mässata. Vaata näiteks, mida teeb järgmine koodirida `"Kokku: 101 liiget" %>% extract_numeric()`
+Vihjed:
+
+* Funktsioonile `html_nodes` antud argumendis võib olla mõistlik tühikud asendada punktidega.
+* Kasutada paketi *tidyr* funktsiooni `extract_numeric()` kui sa ei taha regulaaravaldistega mässata. Vaata näiteks, mida teeb järgmine koodirida `"Kokku: 101 liiget" %>% extract_numeric()`
 
 ```{r}
-url = "http://www.riigikogu.ee/?op=ems&page=haaletus&hid=a85129ed-4873-4b9d-ac37-4788b6587fa0&"
+url = "http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/a85129ed-4873-4b9d-ac37-4788b6587fa0/"
 
 # sinu kood
 
@@ -153,14 +156,14 @@ url = "http://www.riigikogu.ee/?op=ems&page=haaletus&hid=a85129ed-4873-4b9d-ac37
 
 ### Ülesanne 4 (2 punkti)
 
-* Eralda kooseluseaduse eelnõu hääletamistulemuste veebilehe [html lähtekoodist](http://www.riigikogu.ee/?op=ems&page=haaletus&hid=a85129ed-4873-4b9d-ac37-4788b6587fa0&) andmetabel, kus on 101 rida ning tunnused *nr, nimi, otsus, fraktsioon*.
+* Eralda kooseluseaduse eelnõu hääletamistulemuste  [veebilehelt](http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/661ac414-3481-4f58-8f30-680bc045cfcf/) andmetabel, kus on 101 rida ja tunnused *Nimi*, *Otsus* ja *Fraktsioon*.
 
-Vihje: kasuta funktsiooni `html_table`
+Vihje: kasuta funktsiooni `html_table`.
 
 * Kirjuta vastav kood funktsiooniks `extract_table` (seda funktsiooni läheb vaja järgmises ülesandes, kus eraldad kõigi Riigikogu XII hääletuste kohta vastava tabeli). Sisendiks on kas veebilehe url, faili lokaalne asukoht või sõne. Funktsioon peab tagastama vastava data.frame-i (pane tähele, et su funktsioon ei tagastaks listi, milles on üks data.frame). 
 
 ```{r}
-url = "http://www.riigikogu.ee/?op=ems&page=haaletus&hid=a85129ed-4873-4b9d-ac37-4788b6587fa0&"
+url = "http://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/a85129ed-4873-4b9d-ac37-4788b6587fa0/"
 
 extract_table = function(x){
   # sinu kood
@@ -171,9 +174,9 @@ Kontrolli, et funktsioon töötab.
 
 ### Ülesanne 5 (5 punkti) - andmestiku ehitamine
 
-Ülesandes 4 tegid läbi Riigikogu saadikute hääletamistulemuste eraldamise kooseluseaduse korral. Failis [htmls.zip](/data/htmls.zip) on olemas veebilehed kõigi Riigikogu XII hääletuste kohta. Sinu ülesandeks on koostada andmetabel, kus ridades on Riigikogu saadiku nimi ja veergudes kõik hääletamiskorrad. Seda andmestikku läheb vaja järgmises praktikumis, kus uurime hääletamismustreid.
+Ülesandes 4 tegid läbi Riigikogu saadikute hääletamistulemuste eraldamise kooseluseaduse korral. Failis [htmls.zip](../data/htmls.zip) on olemas veebilehed kõigi Riigikogu XII hääletuste kohta. Sinu ülesandeks on koostada andmetabel, kus ridades on Riigikogu saadiku nimi ja veergudes kõik hääletamiskorrad. Seda andmestikku läheb vaja järgmises praktikumis, kus uurime hääletamismustreid.
 
-1. Kõigepealt paki lahti zip fail ning loe R-i sisse kõigi html failide nimed.  
+1. Kõigepealt paki lahti zip fail ja loe R-i sisse kõigi html failide nimed.  
 Näpunäide: Järgnev kood aitab kätte saada kõigi antud kaustas olevad csv-failide nimed (seejuures argument `full.names` võimaldab tagastada terve failitee).
 
 ```{r, eval=FALSE}
@@ -183,7 +186,7 @@ filenames = list.files("C:/Users/Kasutaja/andmeteadus/kodutoo5/", pattern = "*.c
 2. Esialgu loe sisse umbes 5 erinevat html faili.  
 
 * NB! Alles siis, kui oled täiesti kindel, et sinu kood töötab korrektselt, võta kasutusele kõik html failid.
-* Näpunäide: Järgnev kood loeb sisse kõik muutujas `filenames` olevad `csv` andmestikud ning tekitab neist listi. 
+* Näpunäide: Järgnev kood loeb sisse kõik muutujas `filenames` olevad `csv` andmestikud ja tekitab neist listi. 
 
 ```{r, eval=FALSE}
 list_of_dataframes = list()
@@ -200,7 +203,7 @@ for(i in 1:length(filenames)){
 
 4. Nüüdseks peaksid olema saanud listi, mille elementideks on erinevad andmetabelid (kõiki faile kasutades peaks nende koguarv olema 1845). Tee nendest andmetabelitest üks suur (pikk) andmetabel, paigutades need üksteise otsa. Seda aitab teha paketi dplyr funktsioon `rbind_all`. Tulemuseks peaksid saama andmetabeli, mille ridade arv on 101 * "sinu kasutatud failide arv". 
 
-5. Muuda pikk andmetabel laiaks. Seda aitab teha paketi reshape2 käsk `dcast`. Uuri funktsiooni `dcast` minimalistlikku näidet [siit](http://andmeteadus.github.io/praktikum3_reshape/#dcast).
+5. Muuda pikk andmetabel laiaks. Seda aitab teha paketi reshape2 käsk `dcast`. Uuri funktsiooni `dcast` minimalistlikku näidet [siit](../praktikum3_reshape/#dcast).
 
 6. Kui kõik eelnev töötab, tee eelnev läbi kõikide html failidega. Ära kohku, kui kõikide html tabelite eraldamisega läheb aega 5 minutit või rohkem. 
 
@@ -256,7 +259,7 @@ Juhised:
 
 Näpunäide:
 
-* Uuri paketi [*rvest* minimalistlikku näidet info eraldamisest XML failist](http://andmeteadus.github.io/praktikum5_rvest_minimal/#xml).
+* Uuri paketi [*rvest* minimalistlikku näidet info eraldamisest XML failist](../praktikum5_rvest_minimal/#xml).
 
 
 ### Ülesanne 8 (2 punkti)
@@ -267,11 +270,11 @@ Seepärast märgib ta iga lotokolmapäev Viking Lotto loositud numbrid üles ja uuri
 1.) Õpeta tehis-Eva tegema seda sama.
 
 * Eesti Loto veebilehel on toodud [statistika loositud pallide sagedusest](https://www.eestiloto.ee/osi/stats.do?lastDraws=250&gameCode=11&sort=frq0&action=searchNumbers).
-* Eralda vastav tabel, kus veergudes on tunnused *number*, *sagedus* ja *sagedus protsentides*.
+* Eralda vastav tabel, kus veergudes on tunnused *Number*, *Sagedus* ja *Sagedus protsentides*.
 * selectorgadget veab sind siin alt ning kergem on lähtekoodi inspekteerida brauseris olevate tööriistadega (Chrome's vajuta `Ctrl + Shift + I` või tee parem klikk ja vajuta inspekteeri elementi).
 * Visualiseeri saadud andmetabelit. Tee näiteks tulpdiagramm, kus x-teljel on arvud 1-48 ning y-telg tähistab sagedust.
 
-2.) (**2 boonuspunkti + lisaboonuspunkt**) Viimase 250 loosiga on pall 35 tulnud 28 korral, pall 34 aga 59 korral. Uuri, kas on alust arvata, et Viking Lotto süsteem on kallutatud. Selleks mõtle välja, kuidas seda kontrollida (näiteks võid kasutada simulatsioonidel põhinevat lähenemist). Selgita lühidalt oma lähenemist ja raporteeri, millise tulemuse said. Lisaboonuspunkti saamiseks visualiseeri seda tulemust.
+2.) (**2 boonuspunkti + lisaboonuspunkt**) Viimase 250 loosiga on pall 35 tulnud 31 korral, pall 34 aga 55 korral. Uuri, kas on alust arvata, et Viking Lotto süsteem on kallutatud. Selleks mõtle välja, kuidas seda kontrollida (näiteks võid kasutada simulatsioonidel põhinevat lähenemist). Selgita lühidalt oma lähenemist ja raporteeri, millise tulemuse said. Lisaboonuspunkti saamiseks visualiseeri seda tulemust.
 
 
 ### Boonusülesanne 1 (kuni 5 punkti) - Kas kõik teed viivad Facebooki? (ehk juhuslik ekslemine veebilehtedel)
