@@ -18,7 +18,7 @@ Selleks on meil kasutada andmestik, kus on palju näiteid käsitsi kirjutatud numb
 
 ![alt text](numbrid.png "Binaarkood?")
 
-Laadi alla andmestik [numbrid.csv](/data/numbrid.csv). Iga rida vastab ühele pildile. Andmestiku viimane veerg *label* näitab, kas tegu on nulli või ühega. Ülejäänud veerud näitavad vastava piksli intensiivsust, kusjuures pikslid on järjestatud ülalt alla (alates vasakust ülemisest nurgast). 
+Laadi alla andmestik [numbrid.csv](../data/numbrid.csv). Iga rida vastab ühele pildile. Andmestiku viimane veerg *label* näitab, kas tegu on nulli või ühega. Ülejäänud veerud näitavad vastava piksli intensiivsust, kusjuures pikslid on järjestatud ülalt alla (alates vasakust ülemisest nurgast). 
 
 ### Ülesanne 1 (2 punkti) - andmestikuga tutvumine
 

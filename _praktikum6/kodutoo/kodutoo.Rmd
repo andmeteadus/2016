@@ -5,17 +5,9 @@ output:
     theme: null
 ---
 
-Tähtaeg: 30.03.2015 23:59 GMT
+Tähtaeg: 29.03.2016 23:59 GMT
 
 # I osa
-
-(**10 punkti**) Lahenda praktikumis alustatud [käsitsi kirjutatud numbrite ülesanded](/praktikum6_numbrid).
-
-# II osa
-
-(**10 punkti**) Analüüsi [riigikogu hääletusmustreid](/praktikum6_polaarsus). 
-
-# III osa
 
 (**1 punkt**) Vaata Stanfordi Statistical Learning kursuse videot [hierarhilise klasterdamise kohta](https://www.youtube.com/watch?v=Tuuc9Y06tAc)
 
@@ -44,12 +36,19 @@ Nimeta jutuks olnud teadusartikli põhitulemus.
 
 Soovitame sul katsuda jõudu ka teadusartikli endaga [Biomarker Profiling by Nuclear Magnetic Resonance Spectroscopy for the Prediction of All-Cause Mortality: An Observational Study of 17,345 Persons](http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001606). Järgmises praktikumis kasutame sedasama andmestikku, millel see artikkel põhineb. 
 
-(**1 boonuspunkt**) Kirjuta, kui palju aega kulus I, II ja III osa peale. Kuivõrd selgeks sai sinu jaoks PCA kontseptsioon? Mida arvad ülesannetest (kasulikkus, huvitavus)?
+# II osa
+
+(**10 punkti**) Lahenda praktikumis alustatud [käsitsi kirjutatud numbrite ülesanded](../praktikum6_numbrid).
+
+# III osa
+
+(**10 punkti**) Analüüsi [riigikogu hääletusmustreid](../praktikum6_polaarsus). 
 
 
 # Mida on vaja esitada?
 
-* I ja II osa kohta tuleb esitada nii andmeanalüüsi raport (html või pdf formaadis) kui ka selle lähtekood .Rmd failina.
-* III osa vastused tuleb kirjutada meili sisusse või esitada tekstifailina.
+* I osa vastused tuleb kirjutada meili sisusse või esitada tekstifailina.
+* II ja III osa kohta tuleb esitada nii andmeanalüüsi raport (html või pdf formaadis) kui ka selle lähtekood .Rmd failina.
+* Lisaks võiksid mainida, kui palju aega kulus I, II ja III osa peale. Mida arvad ülesannetest?
 
-Lahendused saata meili peale: andmeteadus@gmail.com
+Lahendused saata meili peale: markgimbutas@gmail.com
