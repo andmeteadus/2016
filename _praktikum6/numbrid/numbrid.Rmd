@@ -71,7 +71,7 @@ plot_digit_pheatmap = function(digit){
 # sinu kood
 ```
 
-c. Sorteeri andmestiku read selliselt, et üleval oleksid nullid ja all ühed. Visualiseeri kogu andmestikku kasutadaes `pheatmap` funktsiooni. Kasuta argumente `cluster_rows=FALSE, cluster_cols=FALSE`. Abiks on [pheatmap minimalistlik näide](/praktikum6_pheatmap_minimal).
+c. Sorteeri andmestiku read selliselt, et üleval oleksid nullid ja all ühed. Visualiseeri kogu andmestikku kasutadaes `pheatmap` funktsiooni. Kasuta argumente `cluster_rows=FALSE, cluster_cols=FALSE`. Abiks on [pheatmap minimalistlik näide](../praktikum6_pheatmap_minimal).
 
 
 ```{r}
@@ -84,7 +84,7 @@ Vastus: ...
 
 ### Ülesanne 2 (4 punkti)
 
-a. Tee andmestikul PCA (kontrolli, et oled eelnevalt andmestikust eemaldanud tunnuse label). PCA tegemiseks kasuta funktsiooni `prcomp`. Abiks on [PCA minimalistlik näide](/praktikum6_pca_minimal). 
+a. Tee andmestikul PCA (kontrolli, et oled eelnevalt andmestikust eemaldanud tunnuse label). PCA tegemiseks kasuta funktsiooni `prcomp`. Abiks on [PCA minimalistlik näide](../praktikum6_pca_minimal). 
 
 ```{r}
 # sinu kood
