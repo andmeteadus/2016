@@ -49,13 +49,14 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <blockquote>
 <p>A biomarker is a biological molecule found in blood, body fluids, or tissues that may signal an abnormal process, a condition, or a disease. The level of a particular biomarker may indicate a patient’s risk of disease, or likely response to a treatment. For example, cholesterol levels are measured to assess the risk of heart disease.</p>
 </blockquote>
+<p>Ehk et biomarkerid on lihtsalt märgid, mille seast mõned võivad midagi näidata.</p>
 </div>
 <div id="andmestik" class="section level3">
 <h3>Andmestik</h3>
 <p>Kasutame valimit Geenivaramu andmestikust, mida kasutati eelnevalt mainitud teadusartikli juures. Täpsemalt on andmestikus tunnused:</p>
 <ul>
 <li><em>sugu</em></li>
-<li><em>vanusgrupp</em></li>
+<li><em>vanusegrupp</em></li>
 <li><em>s5</em> - indikaator, kas 5 aasta pärast oli surnud</li>
 <li><em>hyp</em> - kas inimesel on hüpertooniatõbi ehk kõrgvererõhutõbi</li>
 <li><em>suits</em> - kas on suitsetaja</li>
@@ -72,7 +73,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <blockquote>
 <p>Elo tutvus Geenivaramu andmestikuga, ent seal oli palju arusaamatute lühenditega biomarkereid. Samas on ta kuulnud, et kolesterool on üks nendest näitajatest, mille näit peab tingimata korras olema. Ehk saaks kolesterooli põhjal hästi prognoosida surma?</p>
 </blockquote>
-<p>Eralda andmestikust alamandmestik, mis sisaldaks tunnuseid <em>sugu</em>, <em>vanusgrupp</em>, <em>s5</em>, <em>hyp</em>, <em>suits</em> ning järgmisi biomarkereid:</p>
+<p>Eralda andmestikust alamandmestik, mis sisaldaks tunnuseid <em>sugu</em>, <em>vanusegrupp</em>, <em>s5</em>, <em>hyp</em>, <em>suits</em> ning järgmisi biomarkereid:</p>
 <ol style="list-style-type: decimal">
 <li>Serum_C - üldkolesterool</li>
 <li>HDL_C - <a href="http://en.wikipedia.org/wiki/High-density_lipoprotein">HDL kolesterool (“hea”)</a></li>
@@ -162,7 +163,7 @@ estimate_significance(f, c(&quot;LDL_D&quot;, &quot;HDL_C&quot;), data)</code></
 <div id="ulesanne-7-4-punkti-1-boonuspunkt---p-vaartuse-piiri-paikapanek" class="section level3">
 <h3>Ülesanne 7 (4 punkti + 1 boonuspunkt) - p-väärtuse piiri paikapanek</h3>
 <p>Nüüd saime kõigi biomarkerite jaoks teada p-väärtused. Jääb veel küsimus, millised neist peaksime liigitama olulisteks.</p>
-<p>Kuna testisime kõigi 106 biomarkeri olulisust surma ennustamisel, puutume kokku mitmese testimise probleemiga. Vaata selle kohta <a href="https://xkcd.com/882/">koomiksit “Significant”</a> ning uuri materjalist <a href="http://www.stat.berkeley.edu/~mgoldman/Section0402.pdf">http://www.stat.berkeley.edu/~mgoldman/Section0402.pdf</a> mitmese testimise ja Bonferroni korrektsiooni kohta.</p>
+<p>Kuna testisime kõigi 106 biomarkeri olulisust surma ennustamisel, puutume kokku mitmese testimise probleemiga. Vaata selle kohta <a href="https://xkcd.com/882/">koomiksit “Significant”</a> ning uuri <a href="http://www.stat.berkeley.edu/~mgoldman/Section0402.pdf">materjalist</a> mitmese testimise ja Bonferroni korrektsiooni kohta.</p>
 <p>(<strong>1 punkt</strong>) Selgita, milles seisnes koomiksi idee.</p>
 <p>(<strong>1 punkt</strong>) Artiklis kasutati olulisuse nivood <code>p &lt; 0.0005</code>. Täpsemalt,</p>
 <blockquote>
@@ -216,8 +217,8 @@ newdata = data.frame(suits = c(0, 0, 1),
 # On oluline, et newdata sisaldaks kindlasti kõik need veerud, mida on vaja prognoosimisel
 predicted_probabilities = predict(model, newdata=newdata, type = &quot;response&quot;)</code></pre>
 </div>
-<div id="boonusulesanne-2-2-punkti---prognooside-tapsus" class="section level3">
-<h3>Boonusülesanne 2 (2 punkti) - prognooside täpsus</h3>
+<div id="ulesanne-11-2-punkti---prognooside-tapsus" class="section level3">
+<h3>Ülesanne 11 (2 punkti) - prognooside täpsus</h3>
 <p>Eelmises ülesandes prognoosisid surma tõenäosust. Aga mida hakkab tavainimene peale tõenäosusega? Olgem ikka konkreetsed, kas siis sureb 5 aasta jooksul või mitte.</p>
 <p>Selleks otsusta piir, millisest väiksemad tõenäosused klassifitseerid <em>ei sure</em> ja suuremad tõenäosused <em>sureb</em>. Kasutades seda piiri ning eelmises ülesandes kirjutatud funktsiooni, arvuta kõigi andmestikus olnud inimeste jaoks 5 aasta jooksul suremise prognoos (justkui meil poleks olnud teada tunnuse s5 väärtus).</p>
 <p>Milline on sinu prognooside täpsus (st kui suur osa prognoosidest langes kokku tunnuse s5 väärtusega)?</p>

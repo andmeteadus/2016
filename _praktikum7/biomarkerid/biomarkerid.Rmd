@@ -17,12 +17,14 @@ Aga mis üleüldse on biomarker?
 
 > A biomarker is a biological molecule found in blood, body fluids, or tissues that may signal an abnormal process, a condition, or a disease. The level of a particular biomarker may indicate a patient's risk of disease, or likely response to a treatment. For example, cholesterol levels are measured to assess the risk of heart disease.
 
+Ehk et biomarkerid on lihtsalt märgid, mille seast mõned võivad midagi näidata.
+
 ### Andmestik
 
 Kasutame valimit Geenivaramu andmestikust, mida kasutati eelnevalt mainitud teadusartikli juures. Täpsemalt on andmestikus tunnused:
 
 * *sugu*
-* *vanusgrupp*
+* *vanusegrupp*
 * *s5* - indikaator, kas 5 aasta pärast oli surnud
 * *hyp* - kas inimesel on hüpertooniatõbi ehk kõrgvererõhutõbi
 * *suits* - kas on suitsetaja
@@ -39,7 +41,7 @@ Analüüsi lihtsuse huvides eemalda puuduvaid andmeid sisaldavad read. Abiks on fu
 
 > Elo tutvus Geenivaramu andmestikuga, ent seal oli palju arusaamatute lühenditega biomarkereid. Samas on ta kuulnud, et kolesterool on üks nendest näitajatest, mille näit peab tingimata korras olema. Ehk saaks kolesterooli põhjal hästi prognoosida surma?
 
-Eralda andmestikust alamandmestik, mis sisaldaks tunnuseid *sugu*, *vanusgrupp*, *s5*, *hyp*, *suits* ning  järgmisi biomarkereid:
+Eralda andmestikust alamandmestik, mis sisaldaks tunnuseid *sugu*, *vanusegrupp*, *s5*, *hyp*, *suits* ning  järgmisi biomarkereid:
 
 1. Serum_C - üldkolesterool
 2. HDL_C - [HDL kolesterool ("hea")](http://en.wikipedia.org/wiki/High-density_lipoprotein)
@@ -157,7 +159,7 @@ Visualiseeri saadud tulemust. Võid teha näiteks sellise joonise p-väärtustest lo
 
 Nüüd saime kõigi biomarkerite jaoks teada p-väärtused. Jääb veel küsimus, millised neist peaksime liigitama olulisteks. 
 
-Kuna testisime kõigi 106 biomarkeri olulisust surma ennustamisel, puutume kokku mitmese testimise probleemiga. Vaata selle kohta [koomiksit "Significant"](https://xkcd.com/882/) ning uuri materjalist http://www.stat.berkeley.edu/~mgoldman/Section0402.pdf mitmese testimise ja Bonferroni korrektsiooni kohta. 
+Kuna testisime kõigi 106 biomarkeri olulisust surma ennustamisel, puutume kokku mitmese testimise probleemiga. Vaata selle kohta [koomiksit "Significant"](https://xkcd.com/882/) ning uuri [materjalist]( http://www.stat.berkeley.edu/~mgoldman/Section0402.pdf) mitmese testimise ja Bonferroni korrektsiooni kohta. 
 
 (**1 punkt**) Selgita, milles seisnes koomiksi idee. 
 
@@ -219,7 +221,7 @@ predicted_probabilities = predict(model, newdata=newdata, type = "response")
 ```
 
 
-### Boonusülesanne 2 (2 punkti) - prognooside täpsus
+### Ülesanne 11 (2 punkti) - prognooside täpsus
 
 Eelmises ülesandes prognoosisid surma tõenäosust. Aga mida hakkab tavainimene peale tõenäosusega? Olgem ikka konkreetsed, kas siis sureb 5 aasta jooksul või mitte. 
 

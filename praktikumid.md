@@ -94,6 +94,11 @@ Heatmap. Peakomponentanalüüs. Näide (jätkub): Riigikogu saadikute hääletam
 
 Logistiline regressioon. Mitmese testimise probleem. Näide: biomarkerid ja statistika (ehk kuidas ennustada surma).
 
+* Abimaterjal:
+    * [Logistilise regressiooni minimalistlik näide](../praktikum7_logreg_minimal)
+* [Biomarkerite abil surma prognoosimine](../praktikum7_biomarkerid)
+* [Kodutöö](../praktikum7_kodutoo)
+    * Tähtaeg 05.04.2016 kell 23:59.
 
 ## Praktikum 8
 
