@@ -130,8 +130,6 @@ a. Kas eelnevalt sobitatud log-normaaljaotus võiks sobida andmetega? Mille aluse
 
 b. Aga kas gammajaotus võiks sobida andmetega?
 
-> Praktikumis arutasime märksõnu *QQplot* ja Kolmogorov-Smirnovi test. 
-
 c. Oletame, et mõlemad jaotused sobisid andmetega. Mille põhjal langetad otsuse, kumb sobib paremini?  
 WADA väitis, et log-normaaljaotus sobib andmetele kõige paremini. Kas said sama tulemuse?
 
