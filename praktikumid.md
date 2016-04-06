@@ -105,3 +105,8 @@ Logistiline regressioon. Mitmese testimise probleem. Näide: biomarkerid ja stat
 06.04.2016
 
 Doping ja statistika. Statistiline test. Näide: ühe dopingujuhtumi analüüs.
+
+* [Dopingutesti ülesanded](../praktikum8_doping)
+* [Kodutöö](../praktikum8_kodutoo)
+    * Tähtaeg 12.04.2016 kell 23:59.
+

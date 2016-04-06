@@ -5,19 +5,18 @@ output:
     theme: null
 ---
 
-Tähtaeg: 13.04.2015 23:59 GMT
+Tähtaeg: 12.04.2016 23:59
 
 
-(**23 punkti**) Lahenda praktikumis alustatud [dopingutesti ülesanded](/praktikum8_doping).
+(**23 punkti**) Lahenda praktikumis alustatud [dopingutesti ülesanded](../praktikum8_doping).
 
 (**2 punkti**) Nimeta vähemalt kaks küsimust, mis tekkisid kasvuhormooni dopingutesti uurides, ja millele tahaksid artikli autorilt vastust saada. 
-
-
-(**1 boonuspunkt**) Kirjuta, kui palju aega kulus ülesannete peale. Mida arvad ülesannetest (kasulikkus, huvitavus)?
 
 
 # Mida on vaja esitada?
 
 * Tuleb esitada nii andmeanalüüsi raport (html või pdf formaadis) kui ka selle lähtekood .Rmd failina.
 
-Lahendused saata meili peale: andmeteadus@gmail.com
+* Lisaks palun kirjutada, kui palju aega kulus ülesannete peale. Mida arvad ülesannetest (kasulikkus, huvitavus)?
+
+Lahendused saata meili peale: markgimbutas@gmail.com
