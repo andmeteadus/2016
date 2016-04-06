@@ -8,9 +8,7 @@ output:
 Tähtaeg: 12.04.2016 23:59
 
 
-(**23 punkti**) Lahenda praktikumis alustatud [dopingutesti ülesanded](../praktikum8_doping).
-
-(**2 punkti**) Nimeta vähemalt kaks küsimust, mis tekkisid kasvuhormooni dopingutesti uurides, ja millele tahaksid artikli autorilt vastust saada. 
+(**25 punkti**) Lahenda praktikumis alustatud [dopingutesti ülesanded](../praktikum8_doping).
 
 
 # Mida on vaja esitada?
