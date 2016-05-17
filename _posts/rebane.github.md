@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Eesti kogumispensionifondid"
+author: "Reimo Rebane"
+---
+
 Eesti kogumispensionifondid on [madala tootlusega](http://www.aripaev.ee/uudised/2014/02/27/rk-pensionifondide-reaaltootlus-nullilahedane). Osalt on selles süüdi kõrged teenustasud (valitsemistasu on kuni 1.72%). Uurime, kas madala teenustasuga pensionifond, mis investeerib kogu oma vara indeksfondidesse, on parema tootlusega kui Eesti pensionifondid.
 
 Indeksid
