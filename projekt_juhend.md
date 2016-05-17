@@ -8,7 +8,7 @@ Aine läbimiseks tuleb läbi viia üks praktiline andmeanalüüs ning kirjutada 
 
 * Teema valimine - 15.04.2016
 * Projekti esitamise tähtaeg - 15.05.2016 kell 23.59.
-* Projekti tulemuste müümine (st esitlus) - mõni päev pärast esitamise tähtaega (täpsem aeg ja koht selgub).
+* Projekti tulemuste müümine (st esitlus) - 18.05.2016 kell 16:15 ruumis 402.
 
 Mõned meie välja pakutud teemad on [siin](https://docs.google.com/document/d/1qwCjPXbLV-JMIgn-PnopGp_rGbI4wOk9qNt2u2NQAWE/edit?usp=sharing).
 
